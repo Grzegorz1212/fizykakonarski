@@ -3,8 +3,8 @@
 <head>
     <title>Button Click Example</title>
     <style>
-        /* Hide the text by default */
-        #hiddenText {
+        /* Hide the table by default */
+        #dataTable {
             display: none;
         }
     </style>
@@ -12,12 +12,41 @@
 <body>
 
     <button onclick="showText()">Show Text</button>
-    <p id="hiddenText">This text was hidden!</p>
+    <p id="hiddenText" style="display: none;">This text was hidden!</p>
+
+    <button onclick="showTable()">Show Table</button>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>42</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>55</td>
+                <td>78</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
 
     <script>
         function showText() {
             var text = document.getElementById("hiddenText");
             text.style.display = "block"; // Change display property to show the text
+        }
+
+        function showTable() {
+            var table = document.getElementById("dataTable");
+            table.style.display = "table"; // Change display property to show the table
         }
     </script>
 
