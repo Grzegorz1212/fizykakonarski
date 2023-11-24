@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello, World!</title>
+    <title>Button Click Example</title>
+    <style>
+        /* Hide the text by default */
+        #hiddenText {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hello, World!</h1>
-    <p>This is a simple website greeting the world.</p>
+    <button onclick="showText()">Show Text</button>
+    <p id="hiddenText">This text was hidden!</p>
+
+    <script>
+        function showText() {
+            var text = document.getElementById("hiddenText");
+            text.style.display = "block"; // Change display property to show the text
+        }
+    </script>
 
 </body>
 </html>
