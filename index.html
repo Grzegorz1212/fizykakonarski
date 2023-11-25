@@ -37,7 +37,7 @@
             <!-- Add more rows as needed -->
         </tbody>
     </table>
-
+ <pre id="dataContainer"></pre>
     <script>
 
         var text = "Hello Word!";
@@ -64,6 +64,9 @@ function fetchData() {
                     return response.json();
                 })
   .then(data => {
+                    // Display fetched data in a readable format
+                    document.getElementById('dataContainer').innerText = JSON.stringify(data, null, 2);
+                
     // Create a table dynamically using the fetched data
     const table = document.createElement('table');
     
