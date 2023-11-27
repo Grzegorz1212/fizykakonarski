@@ -33,7 +33,8 @@
     </form>
 
     <div id="klasa2" class="hidden">
-        <p>Klasa </p>
+        <p>Klasa 2A</p>
+        fetchklasa2();
         <button onclick="showPasswordSection()">Powrot</button>
     </div>
 
@@ -47,8 +48,6 @@
                 document.getElementById("klasa2").classList.remove("hidden");
                 // Hide the password section
                 document.getElementById("passwordForm").classList.add("hidden");
-                fetchklasa2();
-
             } 
             else {
                 alert("Nie poprawna klasa, sprouj ponownie.");
