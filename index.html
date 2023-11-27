@@ -19,16 +19,23 @@
         tr:nth-child(1) {
             font-weight: bold;
         }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <h1>Witaj na stronie nayczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <form id="passwordForm">
         <label for="password">Podaj klase:</label>
-        <input type="password" id="password">
+        <input type="password" id="passwordInput">
         <button type="button" onclick="checkPassword()">Submit</button>
     </form>
-    
+
+    <div id="klasa2" class="hidden">
+        <p>Klasa </p>
+        <button onclick="showPasswordSection()">Enter Password Again</button>
+    </div>
 
     <script>
         function checkPassword() {
@@ -36,13 +43,25 @@
 
             // Check if the entered password is correct (for demonstration purposes, checking against a sample password)
             if (password === "klasa2") {
+                // Display the button section
+                document.getElementById("klasa2").classList.remove("hidden");
+                // Hide the password section
+                document.getElementById("passwordForm").classList.add("hidden");
                 fetchklasa2();
+
             } 
             else {
                 alert("Nie poprawna klasa, sprouj ponownie.");
             }
         }
-        
+        function showPasswordSection() {
+            // Reset the password input field
+            document.getElementById("passwordInput").value = "";
+            // Hide the button section
+            document.getElementById("klasa2").classList.add("hidden");
+            // Display the password section
+            document.getElementById("passwordForm").classList.remove("hidden");
+        }
 
         function fetchklasa2() {
             fetch('https://raw.githubusercontent.com/Grzegorz1212/fizykakonarski/main/klasa2.json')
