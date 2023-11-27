@@ -27,14 +27,14 @@
 <body>
     <h1>Witaj na stronie nayczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <form id="passwordForm">
-        <label for="password">Podaj klase:</label>
-        <input type="password" id="passwordInput">
-        <button type="button" onclick="checkPassword()">Submit</button>
+        <label for="password">Podaj klase ("klasai", gdzie i = 1, 2, 3, 4):</label>
+        <input type="password" id="password">
+        <button type="button" onclick="checkPassword()">Pokaz</button>
     </form>
 
     <div id="klasa2" class="hidden">
         <p>Klasa </p>
-        <button onclick="showPasswordSection()">Enter Password Again</button>
+        <button onclick="showPasswordSection()">Powrot</button>
     </div>
 
     <script>
@@ -56,7 +56,7 @@
         }
         function showPasswordSection() {
             // Reset the password input field
-            document.getElementById("passwordInput").value = "";
+            document.getElementById("password").value = "";
             // Hide the button section
             document.getElementById("klasa2").classList.add("hidden");
             // Display the password section
