@@ -10,16 +10,13 @@
     </style>
 </head>
 <body>
+    <p1>Witaj na stronie nayczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</p1>
     <form id="passwordForm">
         <label for="password">Podaj klase:</label>
         <input type="password" id="password">
         <button type="button" onclick="checkPassword()">Submit</button>
     </form>
     
-    <button onclick="showText()">Show Text</button>
-    <p id="hiddenText" style="display: none;">This text was hidden!</p>
-
-    <button onclick="showTable()">Show Table</button>
 
     <script>
         function checkPassword() {
@@ -34,15 +31,7 @@
             }
         }
         
-        function showText() {
-            var text = document.getElementById("hiddenText");
-            text.style.display = "block"; // Change display property to show the text
-        }
 
-        function showTable() {
-            var table = document.getElementById("dataTable");
-            table.style.display = "table"; // Change display property to show the table
-        }
         function fetchklasa2() {
             fetch('https://raw.githubusercontent.com/Grzegorz1212/fizykakonarski/main/klasa2.json')
               .then(response => {
