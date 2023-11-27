@@ -1,17 +1,40 @@
 [
   {
-    "Name": "Grzegorz",
-    "Age": 27,
-    "Country": "USA"
+    "Numer": "Numer",
+    "spr1": "Grawitacja",
+    "spr2": "Bryla sztywna",
+    "spr3": "Kosmologia",
+    "plusy": "Liczba plusow",
+    "procenty": "Procent",
+    "ocena": "Ocena"
+    
   },
   {
-    "Name": "Marek",
-    "Age": 45,
-    "Country": "Polska"
+    "Numer": "1",
+    "spr1": "0",
+    "spr2": "0",
+    "spr3": "0",
+    "plusy": "0",
+    "procenty": "0",
+    "ocena": "0"
+    
+  },  {
+    "Numer": "2",
+    "spr1": "0",
+    "spr2": "0",
+    "spr3": "0",
+    "plusy": "0",
+    "procenty": "0",
+    "ocena": "0"
+    
+  },  {
+    "Numer": "3",
+    "spr1": "0",
+    "spr2": "0",
+    "spr3": "0",
+    "plusy": "0",
+    "procenty": "0",
+    "ocena": "0"
+    
   },
-  {
-    "Name": "Ola",
-    "Age": 23,
-    "Country": "UK"
-  }
 ]
