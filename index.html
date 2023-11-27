@@ -35,7 +35,7 @@
 
     <div id="klasa2" class="hidden">
         <p>Klasa 2A</p>
-        fetchklasa2();
+        <pre id="dataContainer"></pre>
         <button onclick="showPasswordSection()">Powrot</button>
     </div>
 
@@ -84,7 +84,7 @@
                         });
                     });
                     // Display the created table on your website
-                    document.body.appendChild(table);
+                    document.getElementById("dataContainer").appendChild(table);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
