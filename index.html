@@ -27,11 +27,10 @@
 </head>
 <body>
     <h1>Witaj na stronie nayczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
-    <form id="passwordForm">
-        <label for="password">Podaj klase ("klasai", gdzie i = 1, 2, 3, 4):</label>
-        <input type="password" id="password">
-        <button type="button" onclick="checkPassword()">Pokaz</button>
-    </form>
+    <div id="wybor_klasy">
+        <label>Wybierz klase i polrocze. </label>
+        <button type="button" onclick="fetchklasa2()">Klasa2</button>
+    </div>
 
     <div id="klasa2" class="hidden">
         <p>Klasa 2A</p>
@@ -40,28 +39,14 @@
     </div>
 
     <script>
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-
-            // Check if the entered password is correct (for demonstration purposes, checking against a sample password)
-            if (password === "klasa2") {
-                fetchklasa2();
-                // Display the button section
-                document.getElementById("klasa2").classList.remove("hidden");
-                // Hide the password section
-                document.getElementById("passwordForm").classList.add("hidden");
-            } 
-            else {
-                alert("Nie poprawna klasa, sprouj ponownie.");
-            }
-        }
-        function showPasswordSection() {
+        
+        function showHomeSection() {
             // Reset the password input field
             document.getElementById("password").value = "";
             // Hide the button section
             document.getElementById("klasa2").classList.add("hidden");
             // Display the password section
-            document.getElementById("passwordForm").classList.remove("hidden");
+            document.getElementById("wybor_klasy").classList.remove("hidden");
         }
 
         function fetchklasa2() {
@@ -90,13 +75,19 @@
                 .catch(error => {
                     console.error('Error fetching data:', error);
                 });
+            
+            // Display the button section
+            document.getElementById("klasa2").classList.remove("hidden");
+            // Hide the password section
+            document.getElementById("wybor_klasy").classList.add("hidden");
+            
         }
     
     
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 2;
+    var x = 4;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
