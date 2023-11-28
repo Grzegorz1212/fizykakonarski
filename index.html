@@ -55,19 +55,19 @@
                 })
                 .then(data => {
                     // Display the class data in an HTML table
-                    const classTableDiv = document.getElementById('classTable');
+                    const classTableDiv = document.getElementById("classTable");
                     classTableDiv.innerHTML = createTableFromData(data);
 
                     // Update the class title
-                    document.getElementById('classTitle').textContent = className;
+                    document.getElementById("classTitle").textContent = className;
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
                 });
 
             // Display the div after fetching the data
-            document.getElementById('classData').classList.remove("hidden");
-            document.getElementById('classSelection').classList.add("hidden");
+            document.getElementById("classData").classList.remove("hidden");
+            document.getElementById("classSelection").classList.add("hidden");
         }
         
         // Function to create an HTML table from JSON data
@@ -95,9 +95,9 @@
         
         function showHomeSection() {
              // Hide the button section
-            document.getElementById('classData').classList.add("hidden");
+            document.getElementById("classData").classList.add("hidden");
             // Display the home section
-            document.getElementById('classSelection').classList.remove("hidden");
+            document.getElementById("classSelection").classList.remove("hidden");
         }
 
     
@@ -105,7 +105,7 @@
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 20;
+    var x = 22;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
