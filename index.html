@@ -26,15 +26,33 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nayczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <div id="wybor_klasy">
         <label>Wybierz klase i polrocze. </label>
-        <button type="button" onclick="fetchklasa2()">Klasa2</button>
+        <button type="button" onclick="fetchklasa1A()">Klasa1A</button>
+        <button type="button" onclick="fetchklasa2A()">Klasa2A</button>
+        <button type="button" onclick="fetchklasa3A()">Klasa3A</button>
+        <button type="button" onclick="fetchklasa4A()">Klasa4A</button>
     </div>
 
-    <div id="klasa2" class="hidden">
+    <div id="klasa1A" class="hidden">
+        <p>Klasa 1A</p>
+        <table id="dane_klasa1a"></table>
+        <button type="button" onclick="showHomeSection()">Powrot</button>
+    </div>
+    <div id="klasa2A" class="hidden">
         <p>Klasa 2A</p>
-        <table id="dane_klasa2"></table>
+        <table id="dane_klasa2a"></table>
+        <button type="button" onclick="showHomeSection()">Powrot</button>
+    </div>
+    <div id="klasa3A" class="hidden">
+        <p>Klasa 3A</p>
+        <table id="dane_klasa3a"></table>
+        <button type="button" onclick="showHomeSection()">Powrot</button>
+    </div>
+    <div id="klasa4A" class="hidden">
+        <p>Klasa 4A</p>
+        <table id="dane_klasa4a"></table>
         <button type="button" onclick="showHomeSection()">Powrot</button>
     </div>
 
@@ -42,12 +60,15 @@
         
         function showHomeSection() {
              // Hide the button section
-            document.getElementById("klasa2").classList.add("hidden");
+            document.getElementById("klasa1A").classList.add("hidden");
+            document.getElementById("klasa2A").classList.add("hidden");
+            document.getElementById("klasa3A").classList.add("hidden");
+            document.getElementById("klasa4A").classList.add("hidden");
             // Display the home section
             document.getElementById("wybor_klasy").classList.remove("hidden");
         }
 
-        function fetchklasa2() {
+        function fetchklasa2A() {
             fetch('https://raw.githubusercontent.com/Grzegorz1212/fizykakonarski/main/klasa2.json')
               .then(response => {
                     if (!response.ok) {
@@ -88,7 +109,7 @@
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 8;
+    var x = 10;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
