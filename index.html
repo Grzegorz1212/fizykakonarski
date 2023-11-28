@@ -27,82 +27,55 @@
 </head>
 <body>
     <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
-    <div id="wybor_klasy">
+    <div id="Class_selection">
         <label>Wybierz klase. </label>
-        <button type="button" onclick="fetchklasa1A()">Klasa1A</button>
-        <button type="button" onclick="fetchklasa2A()">Klasa2A</button>
-        <button type="button" onclick="fetchklasa3A()">Klasa3A</button>
-        <button type="button" onclick="fetchklasa4A()">Klasa4A</button>
+        <!-- Buttons for different classes -->
+        <button type="button" onclick="fetchClassData("klasa1A")">Klasa1A</button>
+        <button type="button" onclick="fetchClassData("klasa2A")">Klasa2A</button>
+        <button type="button" onclick="fetchClassData("klasa3A")">Klasa3A</button>
+        <button type="button" onclick="fetchClassData("klasa4A")">Klasa4A</button>
     </div>
 
-    <div id="klasa1A" class="hidden">
-        <p>Klasa 1A</p>
-        <table id="dane_klasa1a"></table>
+    <!-- Div area to display table data -->
+    <div id="Class_data" class="hidden">
+        <p id="Class_title"></p>
+        <div id="Class_table"></div>
         <button type="button" onclick="showHomeSection()">Powrot</button>
     </div>
-    <div id="klasa2A" class="hidden">
-        <p>Klasa 2A</p>
-        <table id="dane_klasa2a"></table>
-        <button type="button" onclick="showHomeSection()">Powrot</button>
-    </div>
-    <div id="klasa3A" class="hidden">
-        <p>Klasa 3A</p>
-        <table id="dane_klasa3a"></table>
-        <button type="button" onclick="showHomeSection()">Powrot</button>
-    </div>
-    <div id="klasa4A" class="hidden">
-        <p>Klasa 4A</p>
-        <table id="dane_klasa4a"></table>
-        <button type="button" onclick="showHomeSection()">Powrot</button>
-    </div>
-
+    
     <script>
-        function fetchklasa1A() {
-         
-            // Display the button section
-            document.getElementById("klasa1A").classList.remove("hidden");
-            // Hide the password section
+
+        function fetchClassData(className) {
+            fetch(className + '.json') // Fetch the respective JSON file based on the className
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Display the class data in the classTable div
+                    const classTableDiv = document.getElementById('classTable');
+                    classTableDiv.textContent = JSON.stringify(data, null, 2);
+
+                    // Update the class title
+                    document.getElementById('classTitle').textContent = 'Class: ' + className;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+
+            // Display the div after fetching the data
+            document.getElementById("classData").classList.remove("hidden");
             document.getElementById("wybor_klasy").classList.add("hidden");
-            
         }
 
         
-        function fetchklasa2A() {
-         
-            // Display the button section
-            document.getElementById("klasa2A").classList.remove("hidden");
-            // Hide the password section
-            document.getElementById("wybor_klasy").classList.add("hidden");
-            
-        }
-        
-        function fetchklasa3A() {
-         
-            // Display the button section
-            document.getElementById("klasa3A").classList.remove("hidden");
-            // Hide the password section
-            document.getElementById("wybor_klasy").classList.add("hidden");
-            
-        }
-        
-        function fetchklasa4A() {
-         
-            // Display the button section
-            document.getElementById("klasa4A").classList.remove("hidden");
-            // Hide the password section
-            document.getElementById("wybor_klasy").classList.add("hidden");
-            
-        }
-
-
         function showHomeSection() {
              // Hide the button section
-            document.getElementById("klasa1A").classList.add("hidden");
-            document.getElementById("klasa2A").classList.add("hidden");
-            document.getElementById("klasa3A").classList.add("hidden");
-            document.getElementById("klasa4A").classList.add("hidden");
+            document.getElementById("Class_data").classList.add("hidden");
             // Display the home section
-            document.getElementById("wybor_klasy").classList.remove("hidden");
+            document.getElementById("Class_selection").classList.remove("hidden");
         }
 
     
