@@ -27,7 +27,7 @@
 </head>
 <body>
     <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
-    <div id="Class_selection">
+    <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
         <button type="button" onclick="fetchClassData("klasa1A")">Klasa1A</button>
@@ -37,9 +37,9 @@
     </div>
 
     <!-- Div area to display table data -->
-    <div id="Class_data" class="hidden">
-        <p id="Class_title"></p>
-        <div id="Class_table"></div>
+    <div id="classData" class="hidden">
+        <p id="classTitle"></p>
+        <div id="classTable"></div>
         <button type="button" onclick="showHomeSection()">Powrot</button>
     </div>
     
@@ -59,7 +59,7 @@
                     classTableDiv.textContent = JSON.stringify(data, null, 2);
 
                     // Update the class title
-                    document.getElementById('classTitle').textContent = 'Class: ' + className;
+                    document.getElementById('classTitle').textContent = className;
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
@@ -67,15 +67,15 @@
 
             // Display the div after fetching the data
             document.getElementById("classData").classList.remove("hidden");
-            document.getElementById("wybor_klasy").classList.add("hidden");
+            document.getElementById("classSelection").classList.add("hidden");
         }
 
         
         function showHomeSection() {
              // Hide the button section
-            document.getElementById("Class_data").classList.add("hidden");
+            document.getElementById("classData").classList.add("hidden");
             // Display the home section
-            document.getElementById("Class_selection").classList.remove("hidden");
+            document.getElementById("classSelection").classList.remove("hidden");
         }
 
     
@@ -83,7 +83,7 @@
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 12;
+    var x = 14;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
