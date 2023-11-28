@@ -35,17 +35,15 @@
     <div id="klasa2" class="hidden">
         <p>Klasa 2A</p>
         <table id="dane_klasa2"></table>
-        <button onclick="showHomeSection()">Powrot</button>
+        <button type="button" onclick="showHomeSection()">Powrot</button>
     </div>
 
     <script>
         
         function showHomeSection() {
-            // Reset the password input field
-            document.getElementById("password").value = "";
-            // Hide the button section
+             // Hide the button section
             document.getElementById("klasa2").classList.add("hidden");
-            // Display the password section
+            // Display the home section
             document.getElementById("wybor_klasy").classList.remove("hidden");
         }
 
@@ -90,7 +88,7 @@
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 6;
+    var x = 8;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
