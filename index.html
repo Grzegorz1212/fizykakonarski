@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie.</h1>
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
@@ -43,7 +43,7 @@
     </div>
     
     <script>
-
+<!--
         function fetchClassData(className) {
             fetch(className + '.json') // Fetch the respective JSON file based on the className
                 .then(response => {
@@ -67,6 +67,31 @@
             // Display the div after fetching the data
             document.getElementById("classData").classList.remove("hidden");
             document.getElementById("classSelection").classList.add("hidden");
+        }
+
+        -->
+            function fetchClassData(className) {
+            fetch(className + '.json') // Fetch the respective JSON file based on the className
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Display the fetched data as text
+                    document.getElementById("classTable").textContent = JSON.stringify(data, null, 2);
+
+                    // Update the class title
+                    document.getElementById("classTitle").textContent = className;
+
+                    // Display the div after fetching the data
+                    document.getElementById("classData").classList.remove("hidden");
+                    document.getElementById("classSelection").classList.add("hidden");
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
         }
         
         // Function to create an HTML table from JSON data
