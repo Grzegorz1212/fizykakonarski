@@ -35,7 +35,7 @@
     <div id="klasa2" class="hidden">
         <p>Klasa 2A</p>
         <table id="dane_klasa2"></table>
-        <button onclick="showPasswordSection()">Powrot</button>
+        <button onclick="showHomeSection()">Powrot</button>
     </div>
 
     <script>
@@ -57,20 +57,23 @@
                     }
                     return response.json();
                 })
-              .then(data => {                
-                    // Create a table dynamically using the fetched data
-                    const table = document.createElement('table');
-    
-                    // Assuming your JSON structure is an array of objects
-                    data.forEach(item => {
+              .then(data => {
+                    // Display the fetched data from JSON in a table
+                    const table = document.getElementById("dane_klasa2");
+                    const headers = Object.keys(data[0]);
+                    const headerRow = table.insertRow();
+                    headers.forEach(headerText => {
+                        const th = document.createElement('th');
+                        th.appendChild(document.createTextNode(headerText));
+                        headerRow.appendChild(th);
+                    });
+                    data.forEach(obj => {
                         const row = table.insertRow();
-                        Object.values(item).forEach(value => {
+                        headers.forEach(headerText => {
                             const cell = row.insertCell();
-                            cell.textContent = value;
+                            cell.appendChild(document.createTextNode(obj[headerText]));
                         });
                     });
-                    // Display the created table on your website
-                    document.getElementById("dane_klasa2").appendChild(table);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
@@ -87,7 +90,7 @@
         // Fetch data every 5 seconds (adjust the interval as needed)
         // setInterval(fetchData, 5000);
     var text = "Hello Word!";
-    var x = 4;
+    var x = 6;
     var num = (0 + x)/2;
     document.write(text);
     document.write(num);
