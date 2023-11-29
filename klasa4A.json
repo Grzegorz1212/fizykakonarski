@@ -1,40 +1,30 @@
 [
   {
-    "Numer": "Numer",
-    "spr1": "Grawitacja",
-    "spr2": "Bryla sztywna",
-    "spr3": "Kosmologia",
-    "plusy": "Liczba plusow",
-    "procenty": "Procent",
-    "ocena": "Ocena"
-    
+    "Numer": "1",
+    "Grawitacja": "5",
+    "Bryla sztywna": "0",
+    "Kosmologia": "5",
+    "Plusy": "2",     
   },
   {
-    "Numer": "1",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
-  },  {
     "Numer": "2",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
-  },  {
+    "Grawitacja": "0",
+    "Bryla sztywna": "0",
+    "Kosmologia": "0",
+    "Plusy": "0",     
+  },  
+  {
     "Numer": "3",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
+    "Grawitacja": "0",
+    "Bryla sztywna": "0",
+    "Kosmologia": "4",
+    "Plusy": "3",     
+  },  
+  {
+    "Numer": "4",
+    "Grawitacja": "0",
+    "Bryla sztywna": "0",
+    "Kosmologia": "0",
+    "Plusy": "0",     
   }
 ]
