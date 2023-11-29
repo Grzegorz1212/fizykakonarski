@@ -88,6 +88,7 @@
                     tableHTML += '<td>' + value + '</td>';
                 });
                 const sum = calculateSumForRow(obj); // Perform your calculation here
+                sum += 100;
                 tableHTML += '<td>' + sum + '</td>'; // Add the calculated value to the table
                 tableHTML += '</tr>';
             });
