@@ -87,15 +87,22 @@
                 Object.values(obj).forEach(value => {
                     tableHTML += '<td>' + value + '</td>';
                 });
-                let sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
-                sum *= 100;
+                let sum = 0;
                 if (className === "klasa1A"){
+                    sum = calculateSumForRow(obj); // Perform your calculation here
+                    sum *= 100;
                     sum /= 10;
                 } else if (className === "klasa2A"){
+                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                    sum *= 100;
                     sum /= 10;
                 } else if (className === "klasa3A"){
+                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                    sum *= 100;
                     sum /= 10;
                 } else if (className === "klasa4A"){
+                    sum = calculateSumForRow(obj); // Perform your calculation here
+                    sum *= 100;
                     sum /= 15;
                 }
                 tableHTML += '<td>' + sum + '</td>'; // Add the calculated value to the table
