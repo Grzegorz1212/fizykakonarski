@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie.</h1>
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
@@ -108,15 +108,23 @@
         // Function to calculate sum of all numeric values in a row
         function calculateSumForRow(obj) {
             const keysToExclude = ['Numer', 'Plusy']; // Keys to exclude from the sum
-            const sum = Object.entries(obj)
+            const includedValues = Object.entries(obj)
                 .filter(([key]) => !keysToExclude.includes(key)) // Exclude specific keys
-                .reduce((acc, [_, value]) => {
-                    const numValue = Number(value);
-                    return !isNaN(numValue) ? acc + numValue : acc; // Add numeric values to the sum
-                }, 0);
-            return sum;
-        }
+                .map(([_, value]) => Number(value)) // Get numeric values
 
+            // Find the lowest value among the included values
+            const lowestValue = Math.min(...includedValues);
+
+            // Calculate the sum excluding the lowest value
+            const sumWithoutLowest = includedValues.reduce((acc, val) => {
+                if (val !== lowestValue) {
+                    return acc + val;
+                }
+                return acc;
+            }, 0);
+
+            return sumWithoutLowest;
+        }
         
         function showHomeSection() {
              // Hide the button section
