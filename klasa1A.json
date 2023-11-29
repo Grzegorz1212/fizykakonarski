@@ -1,42 +1,26 @@
 [
   {
     "Numer": "1",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
+    "Sprawdzian": "5",
+    "Rozmowa": "5",
+    "Plusy": "5"
   }, 
   {
     "Numer": "2",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
+    "Sprawdzian": "5",
+    "Rozmowa": "5",
+    "Plusy": "5"
   },  
   {
     "Numer": "3",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
+    "Sprawdzian": "5",
+    "Rozmowa": "5",
+    "Plusy": "5"
   },  
   {
     "Numer": "4",
-    "spr1": "0",
-    "spr2": "0",
-    "spr3": "0",
-    "plusy": "0",
-    "procenty": "0",
-    "ocena": "0"
-    
+    "Sprawdzian": "5",
+    "Rozmowa": "5",
+    "Plusy": "5"
   }
 ]
