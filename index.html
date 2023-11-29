@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie.</h1>
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
@@ -87,7 +87,7 @@
                 Object.values(obj).forEach(value => {
                     tableHTML += '<td>' + value + '</td>';
                 });
-                const sum = calculateSumForRow(obj); // Perform your calculation here
+                let sum = calculateSumForRow(obj); // Perform your calculation here
                 sum += 100;
                 tableHTML += '<td>' + sum + '</td>'; // Add the calculated value to the table
                 tableHTML += '</tr>';
