@@ -1,12 +1,12 @@
 [
   {
-    "Numer": 1,
-    "spr1": 0,
-    "spr2": 0,
-    "spr3": 0,
-    "plusy": 2+1,
-    "procenty": 0,
-    "ocena": 0
+    "Numer": "1",
+    "spr1": "0",
+    "spr2": "0",
+    "spr3": "0",
+    "plusy": "2+1",
+    "procenty": "0",
+    "ocena": "0"
     
   },
   {
