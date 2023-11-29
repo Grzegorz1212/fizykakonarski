@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie.</h1>
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
@@ -124,11 +124,12 @@
                 .map(([_, value]) => Number(value)) // Get numeric values
 
             // Find the lowest value among the included values
-            const lowestValue = Math.min(...includedValues);
+            let lowestValue = Math.min(...includedValues);
 
             // Calculate the sum by subtracting the lowest value once
             let sumWithoutLowest = includedValues.reduce((acc, val) => {
                 if (val === lowestValue) {
+                    lowestValue = NaN; // Set lowestValue to NaN to ensure it's subtracted only once
                     return acc;
                 }
                 return acc + val;
