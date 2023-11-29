@@ -97,11 +97,16 @@
         }
         // Function to calculate sum of all numeric values in a row
         function calculateSumForRow(obj) {
-            const values = Object.values(obj).filter(val => !isNaN(Number(val))); // Get numeric values
-            const sum = values.reduce((acc, curr) => acc + Number(curr), 0); // Calculate sum
-            sum -= Number(obj['Numer']) + Number(obj['Plusy']);
+            const keysToExclude = ['Numer', 'Plusy']; // Keys to exclude from the sum
+            const sum = Object.entries(obj)
+                .filter(([key]) => !keysToExclude.includes(key)) // Exclude specific keys
+                .reduce((acc, [_, value]) => {
+                    const numValue = Number(value);
+                    return !isNaN(numValue) ? acc + numValue : acc; // Add numeric values to the sum
+                }, 0);
             return sum;
         }
+
         
         function showHomeSection() {
              // Hide the button section
