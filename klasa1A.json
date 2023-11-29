@@ -1,26 +1,26 @@
 [
   {
-    "Numer": "1",
-    "Sprawdzian": "5",
-    "Rozmowa": "5",
-    "Plusy": "5"
-  }, 
+    "Numer": 1,
+    "Sprawdzian": 5,
+    "Rozmowa": 5,
+    "Plusy": 5
+  },
   {
-    "Numer": "2",
-    "Sprawdzian": "5",
-    "Rozmowa": "5",
-    "Plusy": "5"
-  },  
+    "Numer": 2,
+    "Sprawdzian": 5,
+    "Rozmowa": 5,
+    "Plusy": 5
+  },
   {
-    "Numer": "3",
-    "Sprawdzian": "5",
-    "Rozmowa": "5",
-    "Plusy": "5"
-  },  
+    "Numer": 3,
+    "Sprawdzian": 5,
+    "Rozmowa": 5,
+    "Plusy": 5
+  },
   {
-    "Numer": "4",
-    "Sprawdzian": "5",
-    "Rozmowa": "5",
-    "Plusy": "5"
+    "Numer": 4,
+    "Sprawdzian": 5,
+    "Rozmowa": 5,
+    "Plusy": 5
   }
 ]
