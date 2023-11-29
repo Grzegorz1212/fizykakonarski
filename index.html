@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie.</h1>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
@@ -55,7 +55,7 @@
                 .then(data => {
                     // Display the class data in an HTML table
                     const classTableDiv = document.getElementById("classTable");
-                    classTableDiv.innerHTML = createTableFromData(data);
+                    classTableDiv.innerHTML = createTableFromData(data, className);
 
                     // Update the class title
                     document.getElementById("classTitle").textContent = className;
@@ -71,7 +71,7 @@
 
         
         // Function to create an HTML table from JSON data
-        function createTableFromData(data) {
+        function createTableFromData(data, className) {
             let tableHTML = '<table border="1">';
             // Assuming the first object in the data array contains column headers
             tableHTML += '<tr>';
@@ -88,7 +88,16 @@
                     tableHTML += '<td>' + value + '</td>';
                 });
                 let sum = calculateSumForRow(obj); // Perform your calculation here
-                sum += 100;
+                sum *= 100;
+                if (className === "klasa1A"){
+                    sum /= 10;
+                } else if (className === "klasa2A"){
+                    sum /= 10;
+                } else if (className === "klasa3A"){
+                    sum /= 10;
+                } else if (className === "klasa4A"){
+                    sum /= 15;
+                }
                 tableHTML += '<td>' + sum + '</td>'; // Add the calculated value to the table
                 tableHTML += '</tr>';
             });
