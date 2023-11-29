@@ -99,6 +99,7 @@
         function calculateSumForRow(obj) {
             const values = Object.values(obj).filter(val => !isNaN(Number(val))); // Get numeric values
             const sum = values.reduce((acc, curr) => acc + Number(curr), 0); // Calculate sum
+            sum -= Number(obj['Numer']) + Number(obj['Plusy']);
             return sum;
         }
         
