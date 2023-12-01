@@ -1,30 +1,247 @@
 [
   {
-    "Numer": "1",
-    "Grawitacja": "5",
-    "Bryla sztywna": "0",
-    "Kosmologia": "5",
-    "Plusy": "2"    
+    "Numer": 1,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 1    
   },
   {
-    "Numer": "2",
-    "Grawitacja": "0",
-    "Bryla sztywna": "0",
-    "Kosmologia": "0",
-    "Plusy": "0"     
-  },  
+    "Numer": 2,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
   {
-    "Numer": "3",
-    "Grawitacja": "0",
-    "Bryla sztywna": "0",
-    "Kosmologia": "4",
-    "Plusy": "3"   
-  },  
+    "Numer": 3,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 10     
+  },
   {
-    "Numer": "4",
-    "Grawitacja": "0",
-    "Bryla sztywna": "0",
-    "Kosmologia": "0",
-    "Plusy": "0"    
+    "Numer": 4,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 5,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 4     
+  },
+  {
+    "Numer": 6,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 4     
+  },
+  {
+    "Numer": 7,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 1     
+  },
+  {
+    "Numer": 8,
+    "Grawitacja": 2.5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 3     
+  },
+  {
+    "Numer": 9,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 10,
+    "Grawitacja": 3,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 2     
+  },
+  {
+    "Numer": 11,
+    "Grawitacja": 3,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 12,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 1     
+  },
+  {
+    "Numer": 13,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 14,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 15,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 16,
+    "Grawitacja": 5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 3     
+  },
+  {
+    "Numer": 17,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 3     
+  },
+  {
+    "Numer": 18,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 19,
+    "Grawitacja": 3,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 20,
+    "Grawitacja": 3,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 8     
+  },
+  {
+    "Numer": 21,
+    "Grawitacja": 5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 17     
+  },
+  {
+    "Numer": 22,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 23,
+    "Grawitacja": 5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 3     
+  },
+  {
+    "Numer": 24,
+    "Grawitacja": 0,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 25,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 26,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 27,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 28,
+    "Grawitacja": 4,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 4     
+  },
+  {
+    "Numer": 29,
+    "Grawitacja": 5.5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 10     
+  },
+  {
+    "Numer": 30,
+    "Grawitacja": 3,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 31,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 32,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 33,
+    "Grawitacja": 1,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 34,
+    "Grawitacja": 2,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
+  },
+  {
+    "Numer": 35,
+    "Grawitacja": 2.5,
+    "Bryla sztywna": 0,
+    "Kosmologia": 0,
+    "Plusy": 0     
   }
 ]
