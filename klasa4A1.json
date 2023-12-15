@@ -43,7 +43,7 @@
   },
   {
     "Numer": 7,
-    "Dualizm fale": 0,
+    "Dualizm fale": 2.5,
     "Dualizm czastki": 1.75,
     "Zadania": 0,
     "Plusy": 0    
@@ -60,7 +60,7 @@
     "Dualizm fale": 4.75,
     "Dualizm czastki": 4.75,
     "Zadania": 0,
-    "Plusy": 5    
+    "Plusy": 6    
   },
   {
     "Numer": 10,
@@ -191,7 +191,7 @@
   {
     "Numer": 28,
     "Dualizm fale": 1,
-    "Dualizm czastki": 0,
+    "Dualizm czastki": 3,
     "Zadania": 0,
     "Plusy": 0    
   },
