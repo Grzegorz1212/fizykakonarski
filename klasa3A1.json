@@ -2,7 +2,7 @@
   {
     "Numer": 1,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 2.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
@@ -16,21 +16,21 @@
   {
     "Numer": 3,
     "Prad I": 2.25,
-    "Prad II": 0,
+    "Prad II": 3,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 4,
     "Prad I": 4.5,
-    "Prad II": 0,
+    "Prad II": 2.75,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 5,
     "Prad I": 3.5,
-    "Prad II": 0,
+    "Prad II": 2.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
@@ -51,14 +51,14 @@
   {
     "Numer": 8,
     "Prad I": 4.75,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 9,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 1     
   },
@@ -72,7 +72,7 @@
   {
     "Numer": 11,
     "Prad I": 3.25,
-    "Prad II": 0,
+    "Prad II": 2.5,
     "Magnetyzm": 0,
     "Plusy": 3     
   },
@@ -86,21 +86,21 @@
   {
     "Numer": 13,
     "Prad I": 3.25,
-    "Prad II": 0,
+    "Prad II": 3.75,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 14,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 3     
   },
   {
     "Numer": 15,
     "Prad I": 3.25,
-    "Prad II": 0,
+    "Prad II": 2.25,
     "Magnetyzm": 0,
     "Plusy": 6     
   },
@@ -114,126 +114,126 @@
   {
     "Numer": 17,
     "Prad I": 2.25,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 1     
   },
   {
     "Numer": 18,
     "Prad I": 2.75,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 6     
   },
   {
     "Numer": 19,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 20,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.35,
     "Magnetyzm": 0,
     "Plusy": 3     
   },
   {
     "Numer": 21,
     "Prad I": 3.25,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 1     
   },
   {
     "Numer": 22,
     "Prad I": 2.5,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 23,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 2.25,
     "Magnetyzm": 0,
     "Plusy": 10     
   },
   {
     "Numer": 24,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 25,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 1     
   },
   {
     "Numer": 26,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 27,
     "Prad I": 0,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 28,
     "Prad I": 2.25,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 29,
     "Prad I": 3.25,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 5     
   },
   {
     "Numer": 30,
     "Prad I": 4.75,
-    "Prad II": 0,
+    "Prad II": 4.25,
     "Magnetyzm": 0,
     "Plusy": 18     
   },
   {
     "Numer": 31,
     "Prad I": 2.75,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 32,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 1     
   },
   {
     "Numer": 33,
     "Prad I": 3,
-    "Prad II": 0,
+    "Prad II": 3.25,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
   {
     "Numer": 34,
     "Prad I": 3.75,
-    "Prad II": 0,
+    "Prad II": 5,
     "Magnetyzm": 0,
     "Plusy": 3     
   },
