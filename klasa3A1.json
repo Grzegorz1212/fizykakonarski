@@ -9,7 +9,7 @@
   {
     "Numer": 2,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
@@ -44,7 +44,7 @@
   {
     "Numer": 7,
     "Prad I": 2,
-    "Prad II": 0,
+    "Prad II": 3.5,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
@@ -79,7 +79,7 @@
   {
     "Numer": 12,
     "Prad I": 2.75,
-    "Prad II": 0,
+    "Prad II": 4,
     "Magnetyzm": 0,
     "Plusy": 0     
   },
