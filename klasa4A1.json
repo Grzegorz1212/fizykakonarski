@@ -17,21 +17,21 @@
     "Numer": 3,
     "Dualizm fale": 4,
     "Dualizm czastki": 4,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
     "Numer": 4,
     "Dualizm fale": 3.75,
     "Dualizm czastki": 2.75,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
     "Numer": 5,
     "Dualizm fale": 3,
     "Dualizm czastki": 4,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
@@ -45,7 +45,7 @@
     "Numer": 7,
     "Dualizm fale": 2.5,
     "Dualizm czastki": 1.75,
-    "Zadania": 0,
+    "Zadania": 2.75,
     "Plusy": 0    
   },
   {
@@ -59,7 +59,7 @@
     "Numer": 9,
     "Dualizm fale": 4.75,
     "Dualizm czastki": 4.75,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 6    
   },
   {
@@ -80,28 +80,28 @@
     "Numer": 12,
     "Dualizm fale": 4.5,
     "Dualizm czastki": 3.5,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
     "Numer": 13,
     "Dualizm fale": 3.5,
     "Dualizm czastki": 0,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
     "Numer": 14,
     "Dualizm fale": 3.75,
     "Dualizm czastki": 4,
-    "Zadania": 0,
+    "Zadania": 2.75,
     "Plusy": 0    
   },
   {
     "Numer": 15,
     "Dualizm fale": 4,
     "Dualizm czastki": 4,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
@@ -115,14 +115,14 @@
     "Numer": 17,
     "Dualizm fale": 3,
     "Dualizm czastki": 4,
-    "Zadania": 0,
+    "Zadania": 4.75,
     "Plusy": 0    
   },
   {
     "Numer": 18,
     "Dualizm fale": 3,
     "Dualizm czastki": 3,
-    "Zadania": 0,
+    "Zadania": 3.5,
     "Plusy": 0    
   },
   {
@@ -136,7 +136,7 @@
     "Numer": 20,
     "Dualizm fale": 4.5,
     "Dualizm czastki": 3.75,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
@@ -150,7 +150,7 @@
     "Numer": 22,
     "Dualizm fale": 3,
     "Dualizm czastki": 3.5,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
@@ -164,7 +164,7 @@
     "Numer": 24,
     "Dualizm fale": 3,
     "Dualizm czastki": 3.75,
-    "Zadania": 0,
+    "Zadania": 4.75,
     "Plusy": 0    
   },
   {
@@ -192,46 +192,11 @@
     "Numer": 28,
     "Dualizm fale": 1,
     "Dualizm czastki": 3,
-    "Zadania": 0,
+    "Zadania": 5,
     "Plusy": 0    
   },
   {
     "Numer": 29,
-    "Dualizm fale": 0,
-    "Dualizm czastki": 0,
-    "Zadania": 0,
-    "Plusy": 0    
-  },
-  {
-    "Numer": 30,
-    "Dualizm fale": 0,
-    "Dualizm czastki": 0,
-    "Zadania": 0,
-    "Plusy": 0    
-  },
-  {
-    "Numer": 31,
-    "Dualizm fale": 0,
-    "Dualizm czastki": 0,
-    "Zadania": 0,
-    "Plusy": 0    
-  },
-  {
-    "Numer": 32,
-    "Dualizm fale": 0,
-    "Dualizm czastki": 0,
-    "Zadania": 0,
-    "Plusy": 0    
-  },
-  {
-    "Numer": 33,
-    "Dualizm fale": 0,
-    "Dualizm czastki": 0,
-    "Zadania": 0,
-    "Plusy": 0    
-  },
-  {
-    "Numer": 34,
     "Dualizm fale": 0,
     "Dualizm czastki": 0,
     "Zadania": 0,
