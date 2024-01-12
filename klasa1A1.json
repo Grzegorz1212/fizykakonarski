@@ -67,7 +67,7 @@
   },
   {
     "Numer": 12,
-    "Sprawdzian": 2.5,
+    "Sprawdzian": 3.5,
     "Rozmowa": 5,
     "Plusy": 0
   },
@@ -79,8 +79,8 @@
   },
   {
     "Numer": 14,
-    "Sprawdzian": 4,
-    "Rozmowa": 0,
+    "Sprawdzian": 4.5,
+    "Rozmowa": 5,
     "Plusy": 0
   },
   {
@@ -97,8 +97,8 @@
   },
   {
     "Numer": 17,
-    "Sprawdzian": 2.75,
-    "Rozmowa": 0,
+    "Sprawdzian": 3.5,
+    "Rozmowa": 5,
     "Plusy": 0
   },
   {
