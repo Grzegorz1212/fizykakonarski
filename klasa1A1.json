@@ -2,49 +2,49 @@
   {
     "Numer": 1,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
-    "Plusy": 4
+    "Rozmowa": 3,
+    "Plusy": 5
   },
   {
     "Numer": 2,
     "Sprawdzian": 3.75,
-    "Rozmowa": 0,
+    "Rozmowa": 3,
     "Plusy": 4
   },
   {
     "Numer": 3,
     "Sprawdzian": 3.75,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 2
   },
   {
     "Numer": 4,
     "Sprawdzian": 3.75,
-    "Rozmowa": 0,
+    "Rozmowa": 5,
     "Plusy": 0
   },
   {
     "Numer": 5,
     "Sprawdzian": 3.75,
-    "Rozmowa": 0,
+    "Rozmowa": 5,
     "Plusy": 0
   },
   {
     "Numer": 6,
     "Sprawdzian": 3.25,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 7,
     "Sprawdzian": 3.25,
-    "Rozmowa": 0,
+    "Rozmowa": 2.5,
     "Plusy": 1
   },
   {
     "Numer": 8,
     "Sprawdzian": 3.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3,
     "Plusy": 5
   },
   {
@@ -62,7 +62,7 @@
   {
     "Numer": 11,
     "Sprawdzian": 3.5,
-    "Rozmowa": 0,
+    "Rozmowa": 2.5,
     "Plusy": 1
   },
   {
@@ -74,7 +74,7 @@
   {
     "Numer": 13,
     "Sprawdzian": 4,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 0
   },
   {
@@ -86,13 +86,13 @@
   {
     "Numer": 15,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Rozmowa": 3,
     "Plusy": 0
   },
   {
     "Numer": 16,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 0
   },
   {
@@ -104,73 +104,73 @@
   {
     "Numer": 18,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 19,
     "Sprawdzian": 2.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 2
   },
   {
     "Numer": 20,
     "Sprawdzian": 2.25,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 2
   },
   {
     "Numer": 21,
     "Sprawdzian": 3,
-    "Rozmowa": 0,
+    "Rozmowa": 3,
     "Plusy": 0
   },
   {
     "Numer": 22,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Rozmowa": 2.5,
     "Plusy": 1
   },
   {
     "Numer": 23,
     "Sprawdzian": 3.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 1
   },
   {
     "Numer": 24,
     "Sprawdzian": 3,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 25,
     "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Rozmowa": 3,
     "Plusy": 0
   },
   {
     "Numer": 26,
     "Sprawdzian": 3,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 27,
     "Sprawdzian": 4.25,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 28,
     "Sprawdzian": 4.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 0
   },
   {
     "Numer": 29,
     "Sprawdzian": 4.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
@@ -188,25 +188,25 @@
   {
     "Numer": 32,
     "Sprawdzian": 2.25,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 3
   },
   {
     "Numer": 33,
     "Sprawdzian": 1.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 0
   },
   {
     "Numer": 34,
     "Sprawdzian": 1.5,
-    "Rozmowa": 0,
+    "Rozmowa": 3.5,
     "Plusy": 1
   },
   {
     "Numer": 35,
     "Sprawdzian": 3,
-    "Rozmowa": 0,
+    "Rozmowa": 3.75,
     "Plusy": 1
   }
 ]
