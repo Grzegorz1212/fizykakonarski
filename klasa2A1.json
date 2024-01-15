@@ -3,63 +3,63 @@
     "Numer": 1,
     "Grawitacja": 2,
     "Bryla sztywna": 1.125,
-    "Kosmologia": 0,
+    "Kosmologia": 4,
     "Plusy": 1    
   },
   {
     "Numer": 3,
     "Grawitacja": 2.5,
     "Bryla sztywna": 5,
-    "Kosmologia": 0,
+    "Kosmologia": 4,
     "Plusy": 10     
   },
   {
     "Numer": 4,
     "Grawitacja": 3.25,
     "Bryla sztywna": 5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 1     
   },
   {
     "Numer": 5,
     "Grawitacja": 2,
     "Bryla sztywna": 1,
-    "Kosmologia": 0,
+    "Kosmologia": 3.75,
     "Plusy": 7     
   },
   {
     "Numer": 6,
     "Grawitacja": 3.25,
     "Bryla sztywna": 3.5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 9     
   },
   {
     "Numer": 7,
     "Grawitacja": 1.75,
     "Bryla sztywna": 3.25,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 6     
   },
   {
     "Numer": 8,
     "Grawitacja": 2.5,
     "Bryla sztywna": 1.5,
-    "Kosmologia": 0,
+    "Kosmologia": 3.25,
     "Plusy": 3     
   },
   {
     "Numer": 9,
     "Grawitacja": 2.25,
     "Bryla sztywna": 4.25,
-    "Kosmologia": 0,
+    "Kosmologia": 4.75,
     "Plusy": 3     
   },
   {
     "Numer": 10,
     "Grawitacja": 2.75,
     "Bryla sztywna": 3.75,
-    "Kosmologia": 0,
+    "Kosmologia": 3.25,
     "Plusy": 2     
   },
   {
@@ -73,49 +73,49 @@
     "Numer": 12,
     "Grawitacja": 2,
     "Bryla sztywna": 0,
-    "Kosmologia": 0,
+    "Kosmologia": 4.75,
     "Plusy": 1     
   },
   {
     "Numer": 13,
     "Grawitacja": 4,
     "Bryla sztywna": 5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 0     
   },
   {
     "Numer": 15,
     "Grawitacja": 4,
     "Bryla sztywna": 2.25,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 0     
   },
   {
     "Numer": 16,
     "Grawitacja": 4.5,
     "Bryla sztywna": 0,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 3     
   },
   {
     "Numer": 17,
     "Grawitacja": 2,
     "Bryla sztywna": 4.25,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 8     
   },
   {
     "Numer": 18,
     "Grawitacja": 0,
     "Bryla sztywna": 2.75,
-    "Kosmologia": 0,
+    "Kosmologia": 3.25,
     "Plusy": 0     
   },
   {
     "Numer": 19,
     "Grawitacja": 2.75,
     "Bryla sztywna": 4.25,
-    "Kosmologia": 0,
+    "Kosmologia": 3.75,
     "Plusy": 0     
   },
   {
@@ -129,14 +129,14 @@
     "Numer": 21,
     "Grawitacja": 5,
     "Bryla sztywna": 4,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 20     
   },
   {
     "Numer": 22,
     "Grawitacja": 2,
     "Bryla sztywna": 1.5,
-    "Kosmologia": 0,
+    "Kosmologia": 3.75,
     "Plusy": 0     
   },
   {
@@ -150,49 +150,49 @@
     "Numer": 24,
     "Grawitacja": 0,
     "Bryla sztywna": 2.75,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 0     
   },
   {
     "Numer": 25,
     "Grawitacja": 2.25,
     "Bryla sztywna": 2.75,
-    "Kosmologia": 0,
+    "Kosmologia": 4.75,
     "Plusy": 0     
   },
   {
     "Numer": 26,
     "Grawitacja": 4,
     "Bryla sztywna": 1.5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.75,
     "Plusy": 0     
   },
   {
     "Numer": 27,
     "Grawitacja": 2.25,
     "Bryla sztywna": 2,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 0     
   },
   {
     "Numer": 28,
     "Grawitacja": 3.5,
     "Bryla sztywna": 5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 4     
   },
   {
     "Numer": 29,
     "Grawitacja": 5.25,
     "Bryla sztywna": 4,
-    "Kosmologia": 0,
+    "Kosmologia": 4.75,
     "Plusy": 12     
   },
   {
     "Numer": 30,
     "Grawitacja": 3,
     "Bryla sztywna": 3.25,
-    "Kosmologia": 0,
+    "Kosmologia": 3.75,
     "Plusy": 0     
   },
   {
@@ -213,21 +213,21 @@
     "Numer": 33,
     "Grawitacja": 3.75,
     "Bryla sztywna": 1.5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.5,
     "Plusy": 0     
   },
   {
     "Numer": 34,
     "Grawitacja": 2.25,
     "Bryla sztywna": 1.5,
-    "Kosmologia": 0,
+    "Kosmologia": 4.25,
     "Plusy": 3     
   },
   {
     "Numer": 35,
     "Grawitacja": 2.5,
     "Bryla sztywna": 1,
-    "Kosmologia": 0,
+    "Kosmologia": 3.75,
     "Plusy": 6     
   }
 ]
