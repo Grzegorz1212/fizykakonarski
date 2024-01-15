@@ -2,7 +2,7 @@
   {
     "Numer": 1,
     "Grawitacja": 2,
-    "Bryla sztywna": 1.125,
+    "Bryla sztywna": 4,
     "Kosmologia": 4,
     "Plusy": 1    
   },
@@ -23,7 +23,7 @@
   {
     "Numer": 5,
     "Grawitacja": 2,
-    "Bryla sztywna": 1,
+    "Bryla sztywna": 3,
     "Kosmologia": 3.75,
     "Plusy": 9     
   },
@@ -44,7 +44,7 @@
   {
     "Numer": 8,
     "Grawitacja": 2.5,
-    "Bryla sztywna": 1.5,
+    "Bryla sztywna": 5,
     "Kosmologia": 3.25,
     "Plusy": 3     
   },
@@ -72,7 +72,7 @@
   {
     "Numer": 12,
     "Grawitacja": 2,
-    "Bryla sztywna": 0,
+    "Bryla sztywna": 5,
     "Kosmologia": 4.75,
     "Plusy": 1     
   },
