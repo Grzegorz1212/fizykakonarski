@@ -48,18 +48,6 @@
     "Plusy": 5
   },
   {
-    "Numer": 9,
-    "Sprawdzian": 0,
-    "Rozmowa": 0,
-    "Plusy": 0
-  },
-  {
-    "Numer": 10,
-    "Sprawdzian": 0,
-    "Rozmowa": 0,
-    "Plusy": 0
-  },
-  {
     "Numer": 11,
     "Sprawdzian": 3.5,
     "Rozmowa": 2.5,
@@ -91,7 +79,7 @@
   },
   {
     "Numer": 16,
-    "Sprawdzian": 0,
+    "Sprawdzian": 3,
     "Rozmowa": 3.5,
     "Plusy": 0
   },
@@ -175,8 +163,8 @@
   },
   {
     "Numer": 30,
-    "Sprawdzian": 0,
-    "Rozmowa": 0,
+    "Sprawdzian": 4,
+    "Rozmowa": 4,
     "Plusy": 0
   },
   {
