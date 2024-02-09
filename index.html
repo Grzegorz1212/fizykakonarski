@@ -30,10 +30,15 @@
     <div id="classSelection">
         <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
-        <button type="button" onclick="fetchClassData('klasa1A')">Klasa1A</button>
-        <button type="button" onclick="fetchClassData('klasa2A')">Klasa2A</button>
-        <button type="button" onclick="fetchClassData('klasa3A')">Klasa3A</button>
-        <button type="button" onclick="fetchClassData('klasa4A')">Klasa4A</button>
+        <button type="button" onclick="fetchClassData('klasa1A1')">Klasa1A zima</button>
+        <button type="button" onclick="fetchClassData('klasa1A2')">Klasa1A lato</button>
+        <button type="button" onclick="fetchClassData('klasa2A1')">Klasa2A zima</button>
+        <button type="button" onclick="fetchClassData('klasa2A2')">Klasa2A lato</button>
+        <button type="button" onclick="fetchClassData('klasa3A1')">Klasa3A zima</button>
+        <button type="button" onclick="fetchClassData('klasa3A2')">Klasa3A lato</button>
+        <button type="button" onclick="fetchClassData('klasa4A1')">Klasa4A zima</button>
+        <button type="button" onclick="fetchClassData('klasa4A2')">Klasa4A lato</button>
+
     </div>
 
     <!-- Div area to display table data -->
@@ -46,7 +51,7 @@
     <script>
 
         function fetchClassData(className) {
-            fetch(className + '1.json') // Fetch the respective JSON file based on the className
+            fetch(className + '.json') // Fetch the respective JSON file based on the className
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
