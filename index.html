@@ -216,7 +216,7 @@
         // Function to create an HTML table for final results
         function createFinalTable(data1, data2, className) {
             let tableHTML = '<table border="1">';
-            // Assuming the first object in the data array contains column headers
+            // We define the column headers
             tableHTML += '<tr>';
             tableHTML += '<th>Numer</th>';
             tableHTML += '<th>Procent zima</th>'; // Add a header for the new column
@@ -225,7 +225,7 @@
             tableHTML += '<th>Ocena</th>'; // Add a header for the new column
             tableHTML += '</tr>';
 
-            // Adding rows to the table
+            // Adding rows to the table HERE CONTINUE
             data.forEach(obj => {
                 tableHTML += '<tr>';
                 Object.values(obj).forEach(value => {
