@@ -38,7 +38,8 @@
         <button type="button" onclick="fetchClassData('klasa3A2')">Klasa3A lato</button>
         <button type="button" onclick="fetchClassData('klasa4A1')">Klasa4A zima</button>
         <button type="button" onclick="fetchClassData('klasa4A2')">Klasa4A lato</button>
-
+        <button type="button" onclick="fetchFinalData('klasa4A1')">Klasa4A rok</button>
+        
     </div>
 
     <!-- Div area to display table data -->
@@ -83,13 +84,22 @@
                     }
                     return response.json();
                 })
-                .then(data => {
-                    // Display the class data in an HTML table
-                    const classTableDiv = document.getElementById("classTable");
-                    classTableDiv.innerHTML = createFinalTable(data, className);
+                .then(data1 => {
+                    fetch(className + '.json') // Fetch the respective JSON file based on the className
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        })
+                        .then(data2 => {
+                            // Display the class data in an HTML table
+                            const classTableDiv = document.getElementById("classTable");
+                            classTableDiv.innerHTML = createFinalTable(data1, data2, className);
 
-                    // Update the class title
-                    document.getElementById("classTitle").textContent = className;
+                            // Update the class title
+                            document.getElementById("classTitle").textContent = className;
+                        })
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
@@ -204,7 +214,7 @@
         }
 
         // Function to create an HTML table for final results
-        function createFinalTable(data, className) {
+        function createFinalTable(data1, data2, className) {
             let tableHTML = '<table border="1">';
             // Assuming the first object in the data array contains column headers
             tableHTML += '<tr>';
