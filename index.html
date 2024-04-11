@@ -233,15 +233,15 @@
                     let sum = 0
                     let ocena = 0;
                     if (className === "klasa1A"){
-                        sum1 = calculateSumForRow(obj); // Perform your calculation here
+                        sum1 = calculateSumForRow(obj1); // Perform your calculation here
                         sum1 *= 100;
                         sum1 /= 10;
-                        sum1 += addPlusy(obj);
+                        sum1 += addPlusy(obj1);
                         
-                        sum2 = calculateSumForRow(obj); // Perform your calculation here
+                        sum2 = calculateSumForRow(obj2); // Perform your calculation here
                         sum2 *= 100;
                         sum2 /= 10;
-                        sum2 += addPlusy(obj);
+                        sum2 += addPlusy(obj2);
                         
                         sum = (sum1+sum2)/2;    
                         
@@ -259,15 +259,15 @@
                             ocena = 1;
                         }
                     } else if (className === "klasa2A1" || className === "klasa2A2"){
-                        sum1 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum1 = calculateSumWithoutLowestValue(obj1); // Perform your calculation here
                         sum1 *= 100;
                         sum1 /= 10;
-                        sum1 += addPlusy(obj);
+                        sum1 += addPlusy(obj1);
 
-                        sum2 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum2 = calculateSumWithoutLowestValue(obj2); // Perform your calculation here
                         sum2 *= 100;
                         sum2 /= 10;
-                        sum2 += addPlusy(obj);
+                        sum2 += addPlusy(obj2);
                         
                         sum = (sum1+sum2)/2;    
                         
@@ -285,15 +285,15 @@
                             ocena = 1;
                         }
                     } else if (className === "klasa3A1" || className === "klasa3A2"){
-                        sum1 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum1 = calculateSumWithoutLowestValue(obj1); // Perform your calculation here
                         sum1 *= 100;
                         sum1 /= 10;
-                        sum1 += addPlusy(obj);
+                        sum1 += addPlusy(obj1);
                         
-                        sum2 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum2 = calculateSumWithoutLowestValue(obj2); // Perform your calculation here
                         sum2 *= 100;
                         sum2 /= 10;
-                        sum2 += addPlusy(obj);
+                        sum2 += addPlusy(obj2);
 
                         sum = (sum1+sum2)/2;
                         
@@ -311,15 +311,15 @@
                             ocena = 1;
                         }
                     } else if (className === "klasa4A1" || className === "klasa4A2"){
-                        sum1 = calculateSumForRow(obj); // Perform your calculation here
+                        sum1 = calculateSumForRow(obj1); // Perform your calculation here
                         sum1 *= 100;
                         sum1 /= 15;
-                        sum1 += addPlusy(obj);
+                        sum1 += addPlusy(obj1);
                         
-                        sum2 = calculateSumForRow(obj); // Perform your calculation here
+                        sum2 = calculateSumForRow(obj2); // Perform your calculation here
                         sum2 *= 100;
                         sum2 /= 15;
-                        sum2 += addPlusy(obj);
+                        sum2 += addPlusy(obj2);
 
                         sum = (sum1+sum2)/2;
                         
@@ -337,6 +337,8 @@
                             ocena = 1;
                         }
                     }
+                    tableHTML += '<tr>';
+                    tableHTML += '<td>' + obj2['Numer'] + '</td>';
                     tableHTML += '<td>' + sum1.toFixed(2) + '</td>'; // Add the calculated value to the table
                     tableHTML += '<td>' + sum2.toFixed(2) + '</td>'; // Add the calculated value to the table
                     tableHTML += '<td>' + sum.toFixed(2) + '</td>'; // Add the calculated value to the table
