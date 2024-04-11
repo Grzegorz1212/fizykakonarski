@@ -225,90 +225,124 @@
             tableHTML += '<th>Ocena</th>'; // Add a header for the new column
             tableHTML += '</tr>';
 
-            // Adding rows to the table HERE CONTINUE
-            data.forEach(obj => {
-                tableHTML += '<tr>';
-                Object.values(obj).forEach(value => {
-                    tableHTML += '<td>' + value + '</td>';
+            // Adding rows to the table 
+            data1.forEach(obj1 => {
+                data2.forEach(obj2 => {
+                    let sum1 = 0;
+                    let sum2 = 0;
+                    let sum = 0
+                    let ocena = 0;
+                    if (className === "klasa1A"){
+                        sum1 = calculateSumForRow(obj); // Perform your calculation here
+                        sum1 *= 100;
+                        sum1 /= 10;
+                        sum1 += addPlusy(obj);
+                        
+                        sum2 = calculateSumForRow(obj); // Perform your calculation here
+                        sum2 *= 100;
+                        sum2 /= 10;
+                        sum2 += addPlusy(obj);
+                        
+                        sum = (sum1+sum2)/2;    
+                        
+                        if (sum > 100) {
+                            ocena = 6;
+                        } else if (sum >= 85) {
+                            ocena = 5;
+                        } else if (sum >= 70) {
+                            ocena = 4;
+                        } else if (sum >= 50) {
+                            ocena = 3;
+                        } else if (sum >= 30) {
+                            ocena = 2;
+                        } else {
+                            ocena = 1;
+                        }
+                    } else if (className === "klasa2A1" || className === "klasa2A2"){
+                        sum1 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum1 *= 100;
+                        sum1 /= 10;
+                        sum1 += addPlusy(obj);
+
+                        sum2 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum2 *= 100;
+                        sum2 /= 10;
+                        sum2 += addPlusy(obj);
+                        
+                        sum = (sum1+sum2)/2;    
+                        
+                        if (sum > 100) {
+                            ocena = 6;
+                        } else if (sum >= 85) {
+                            ocena = 5;
+                        } else if (sum >= 70) {
+                            ocena = 4;
+                        } else if (sum >= 55) {
+                            ocena = 3;
+                        } else if (sum >= 40) {
+                            ocena = 2;
+                        } else {
+                            ocena = 1;
+                        }
+                    } else if (className === "klasa3A1" || className === "klasa3A2"){
+                        sum1 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum1 *= 100;
+                        sum1 /= 10;
+                        sum1 += addPlusy(obj);
+                        
+                        sum2 = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                        sum2 *= 100;
+                        sum2 /= 10;
+                        sum2 += addPlusy(obj);
+
+                        sum = (sum1+sum2)/2;
+                        
+                        if (sum > 100) {
+                            ocena = 6;
+                        } else if (sum >= 85) {
+                            ocena = 5;
+                        } else if (sum >= 70) {
+                            ocena = 4;
+                        } else if (sum >= 55) {
+                            ocena = 3;
+                        } else if (sum >= 40) {
+                            ocena = 2;
+                        } else {
+                            ocena = 1;
+                        }
+                    } else if (className === "klasa4A1" || className === "klasa4A2"){
+                        sum1 = calculateSumForRow(obj); // Perform your calculation here
+                        sum1 *= 100;
+                        sum1 /= 15;
+                        sum1 += addPlusy(obj);
+                        
+                        sum2 = calculateSumForRow(obj); // Perform your calculation here
+                        sum2 *= 100;
+                        sum2 /= 15;
+                        sum2 += addPlusy(obj);
+
+                        sum = (sum1+sum2)/2;
+                        
+                        if (sum > 100) {
+                            ocena = 6;
+                        } else if (sum >= 90) {
+                            ocena = 5;
+                        } else if (sum >= 75) {
+                            ocena = 4;
+                        } else if (sum >= 60) {
+                            ocena = 3;
+                        } else if (sum >= 40) {
+                            ocena = 2;
+                        } else {
+                            ocena = 1;
+                        }
+                    }
+                    tableHTML += '<td>' + sum1.toFixed(2) + '</td>'; // Add the calculated value to the table
+                    tableHTML += '<td>' + sum2.toFixed(2) + '</td>'; // Add the calculated value to the table
+                    tableHTML += '<td>' + sum.toFixed(2) + '</td>'; // Add the calculated value to the table
+                    tableHTML += '<td>' + ocena + '</td>';
+                    tableHTML += '</tr>';
                 });
-                let sum = 0;
-                let ocena = 0;
-                if (className === "klasa1A"){
-                    sum = calculateSumForRow(obj); // Perform your calculation here
-                    sum *= 100;
-                    sum /= 10;
-                    sum += addPlusy(obj);
-                    if (sum > 100) {
-                        ocena = 6;
-                    } else if (sum >= 85) {
-                        ocena = 5;
-                    } else if (sum >= 70) {
-                        ocena = 4;
-                    } else if (sum >= 50) {
-                        ocena = 3;
-                    } else if (sum >= 30) {
-                        ocena = 2;
-                    } else {
-                        ocena = 1;
-                    }
-                } else if (className === "klasa2A1" || className === "klasa2A2"){
-                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
-                    sum *= 100;
-                    sum /= 10;
-                    sum += addPlusy(obj);
-                    if (sum > 100) {
-                        ocena = 6;
-                    } else if (sum >= 85) {
-                        ocena = 5;
-                    } else if (sum >= 70) {
-                        ocena = 4;
-                    } else if (sum >= 55) {
-                        ocena = 3;
-                    } else if (sum >= 40) {
-                        ocena = 2;
-                    } else {
-                        ocena = 1;
-                    }
-                } else if (className === "klasa3A1" || className === "klasa3A2"){
-                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
-                    sum *= 100;
-                    sum /= 10;
-                    sum += addPlusy(obj);
-                    if (sum > 100) {
-                        ocena = 6;
-                    } else if (sum >= 85) {
-                        ocena = 5;
-                    } else if (sum >= 70) {
-                        ocena = 4;
-                    } else if (sum >= 55) {
-                        ocena = 3;
-                    } else if (sum >= 40) {
-                        ocena = 2;
-                    } else {
-                        ocena = 1;
-                    }
-                } else if (className === "klasa4A1" || className === "klasa4A2"){
-                    sum = calculateSumForRow(obj); // Perform your calculation here
-                    sum *= 100;
-                    sum /= 15;
-                    sum += addPlusy(obj);
-                    if (sum > 100) {
-                        ocena = 6;
-                    } else if (sum >= 90) {
-                        ocena = 5;
-                    } else if (sum >= 75) {
-                        ocena = 4;
-                    } else if (sum >= 60) {
-                        ocena = 3;
-                    } else if (sum >= 40) {
-                        ocena = 2;
-                    } else {
-                        ocena = 1;
-                    }
-                }
-                tableHTML += '<td>' + sum.toFixed(2) + '</td>'; // Add the calculated value to the table
-                tableHTML += '<td>' + ocena + '</td>';
-                tableHTML += '</tr>';
             });
 
             tableHTML += '</table>';
