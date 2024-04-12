@@ -111,67 +111,6 @@
         }
 
 
-
-        
-
-                //____________FUNCTION TO CHECK _______________________________________________
-
-        function fetchFinalData(className) {
-    // Array to store promises for fetching data from both JSON files
-    const promises = [
-        fetch(className + '1.json').then(response => response.json()),
-        fetch(className + '2.json').then(response => response.json())
-    ];
-
-    // Wait for both promises to resolve
-    Promise.all(promises)
-        .then(([data1, data2]) => {
-            // Get all unique keys from both data sets
-            const allKeys = [...new Set([...Object.keys(data1[0]), ...Object.keys(data2[0])])];
-            
-            // Initialize merged data array
-            const mergedData = [];
-
-            // Iterate through each row in data1
-            data1.forEach(row1 => {
-                // Create a new row for the merged data
-                const mergedRow = { ...row1 };
-
-                // Populate values from data2 if the key exists in data2
-                allKeys.forEach(key => {
-                    if (data2[0]?.hasOwnProperty(key)) {
-                        mergedRow[key] = data2[0][key];
-                    } else {
-                        // Otherwise, set the value for the key to an empty string
-                        mergedRow[key] = '';
-                    }
-                });
-
-                // Add the merged row to the merged data array
-                mergedData.push(mergedRow);
-            });
-
-            // Display the merged data in an HTML table
-            const classTableDiv = document.getElementById("classTable");
-            classTableDiv.innerHTML = createFinalTable(mergedData, className);
-
-            // Update the class title
-            document.getElementById("classTitle").textContent = className;
-
-            // Display the div after fetching the data
-            document.getElementById("classData").classList.remove("hidden");
-            document.getElementById("classSelection").classList.add("hidden");
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-        });
-}
-
-
-
-        //_________________________________________________________________
-
-        
         
         // Function to create an HTML table from JSON data
         function createTableFromData(data, className) {
