@@ -45,31 +45,32 @@
     <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <h2>Konsultacje odbywają się w piątki w godzinach 14:50-15:50 w sali 22</h2>
     
-    <div id="classSelection">
-    <div></div>
-    <label>Klasa 1A</label>
-    <label>Klasa 2A</label>
-    <label>Klasa 3A</label>
-    <label>Klasa 4A</label>
+    <div id="classSelection" style="display: grid; grid-template-columns: repeat(4, 1fr);">
+    <!-- Labels for each class -->
+    <div>Klasa 1A</div>
+    <div>Klasa 2A</div>
+    <div>Klasa 3A</div>
+    <div>Klasa 4A</div>
 
-    <label>Półrocze zimowe</label>
+    <!-- Buttons for "Półrocze zimowe" -->
     <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
     <button type="button" onclick="fetchClassData('klasa2A1')">Półrocze zimowe</button>
     <button type="button" onclick="fetchClassData('klasa3A1')">Półrocze zimowe</button>
     <button type="button" onclick="fetchClassData('klasa4A1')">Półrocze zimowe</button>
 
-    <label>Półrocze letnie</label>
+    <!-- Buttons for "Półrocze letnie" -->
     <button type="button" onclick="fetchClassData('klasa1A2')">Półrocze letnie</button>
     <button type="button" onclick="fetchClassData('klasa2A2')">Półrocze letnie</button>
     <button type="button" onclick="fetchClassData('klasa3A2')">Półrocze letnie</button>
     <button type="button" onclick="fetchClassData('klasa4A2')">Półrocze letnie</button>
 
-    <label>Ocena końcoworoczna</label>
+    <!-- Buttons for "Ocena końcoworoczna" -->
     <button type="button" onclick="fetchFinalData('klasa1A')">Ocena końcoworoczna</button>
     <button type="button" onclick="fetchFinalData('klasa2A')">Ocena końcoworoczna</button>
     <button type="button" onclick="fetchFinalData('klasa3A')">Ocena końcoworoczna</button>
     <button type="button" onclick="fetchFinalData('klasa4A')">Ocena końcoworoczna</button>
 </div>
+
 
 
 
