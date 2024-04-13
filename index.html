@@ -25,7 +25,7 @@
         
         #classSelection {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Create four columns */
+            grid-template-columns: repeat(5, 1fr); /* Create four columns */
             gap: 10px; /* Adjust the gap between buttons */
         }
 
@@ -37,18 +37,25 @@
 <body>
     <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
     <h2>Konsultacje odbywają się w piątki w godzinach 14:50-15:50 w sali 22</h2>
+    
     <div id="classSelection">
-        <label>Wybierz klase. </label>
         <!-- Buttons for different classes -->
-        <button type="button" onclick="fetchClassData('klasa1A1')">Klasa1A zima</button>
-        <button type="button" onclick="fetchClassData('klasa1A2')">Klasa1A lato</button>
-        <button type="button" onclick="fetchClassData('klasa2A1')">Klasa2A zima</button>
-        <button type="button" onclick="fetchClassData('klasa2A2')">Klasa2A lato</button>
-        <button type="button" onclick="fetchClassData('klasa3A1')">Klasa3A zima</button>
-        <button type="button" onclick="fetchClassData('klasa3A2')">Klasa3A lato</button>
-        <button type="button" onclick="fetchClassData('klasa4A1')">Klasa4A zima</button>
-        <button type="button" onclick="fetchClassData('klasa4A2')">Klasa4A lato</button>
-        <button type="button" onclick="fetchFinalData('klasa4A')">Klasa4A rok</button>
+        <label>Klasa 1A</label>
+        <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa1A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchFinalData('klasa1A')">Ocena końcoworoczna</button>
+        <label>Klasa 2A</label>
+        <button type="button" onclick="fetchClassData('klasa2A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa2A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchFinalData('klasa2A')">Ocena końcoworoczna</button>
+        <label>Klasa 3A</label>
+        <button type="button" onclick="fetchClassData('klasa3A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa3A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchFinalData('klasa3A')">Ocena końcoworoczna</button>
+        <label>Klasa 4A</label>
+        <button type="button" onclick="fetchClassData('klasa4A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa4A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchFinalData('klasa4A')">Ocena końcoworoczna</button>
         
     </div>
 
