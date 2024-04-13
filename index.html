@@ -25,13 +25,20 @@
         
         #classSelection {
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* Create four columns */
+            grid-template-columns: repeat(4, 1fr); /* Create four columns */
             gap: 10px; /* Adjust the gap between buttons */
-        }
+            text-align: center; /* Center align the contents */
+}
 
-        #classSelection button {
-            margin: 0; /* Remove any default margin */
-        }
+#classSelection button {
+    margin: 0; /* Remove any default margin */
+    width: 100%; /* Make buttons fill the entire width of their container */
+}
+
+#classSelection label {
+    grid-column: span 4; /* Span all four columns */
+}
+
     </style>
 </head>
 <body>
