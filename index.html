@@ -227,22 +227,28 @@
         // Function to create an HTML table for final results
         function createFinalTable(data1, data2, className) {
             let tableHTML = '<table border="1">';
-            // We define the column headers
+            // Define column headers
             tableHTML += '<tr>';
             tableHTML += '<th>Numer</th>';
-            tableHTML += '<th>Procent zima</th>'; // Add a header for the new column
-            tableHTML += '<th>Procent lato</th>'; // Add a header for the new column
-            tableHTML += '<th>Procent sredni</th>'; // Add a header for the new column
-            tableHTML += '<th>Ocena</th>'; // Add a header for the new column
+            tableHTML += '<th>Procent zima</th>';
+            tableHTML += '<th>Procent lato</th>';
+            tableHTML += '<th>Procent sredni</th>';
+            tableHTML += '<th>Ocena</th>';
             tableHTML += '</tr>';
 
-            // Adding rows to the table 
-            let i = 0;
-            data1.forEach(obj1 => {
+            // Iterate over both data arrays
+            for (let i = 0; i < Math.min(data1.length, data2.length); i++) {
+                const obj1 = data1[i];
+                const obj2 = data2[i];
+
+                // Perform calculations and create table rows
                 let sum1 = 0;
                 let sum2 = 0;
-                let sum = 0
+                let sum = 0;
                 let ocena = 0;
+               
+                // Your conditional logic for calculations goes here
+
                 if (className === "klasa1A"){
                     sum1 = calculateSumForRow(obj1); // Perform your calculation here
                     sum1 *= 100;
@@ -348,20 +354,20 @@
                         ocena = 1;
                     }
                 }
+
+                // Create table row
                 tableHTML += '<tr>';
-                tableHTML += '<td>' + obj2['Numer'] + '</td>';
-                tableHTML += '<td>' + sum1.toFixed(2) + '</td>'; // Add the calculated value to the table
-                tableHTML += '<td>' + sum2.toFixed(2) + '</td>'; // Add the calculated value to the table
-                tableHTML += '<td>' + sum.toFixed(2) + '</td>'; // Add the calculated value to the table
+                tableHTML += '<td>' + obj1['Numer'] + '</td>';
+                tableHTML += '<td>' + sum1.toFixed(2) + '</td>';
+                tableHTML += '<td>' + sum2.toFixed(2) + '</td>';
+                tableHTML += '<td>' + sum.toFixed(2) + '</td>';
                 tableHTML += '<td>' + ocena + '</td>';
                 tableHTML += '</tr>';
-                i += 1;
-            });
+            }
 
             tableHTML += '</table>';
             return tableHTML;
         }
-
         
         // Function to calculate sum of all numeric values in a row
         function calculateSumForRow(obj) {
