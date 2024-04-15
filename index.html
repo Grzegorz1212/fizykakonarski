@@ -214,7 +214,11 @@
                 } else if (className === "klasa2A1" || className === "klasa2A2"){
                     sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
                     sum *= 100;
-                    sum /= 10;
+                    if (className === "klasa2A1"){
+                        sum /= 10;
+                    } else {
+                        sum /= 15;
+                    }
                     sum += addPlusy(obj);
                     if (sum > 100) {
                         ocena = 6;
@@ -334,7 +338,7 @@
 
                     sum2 = calculateSumWithoutLowestValue(data2[i]); // Perform your calculation here
                     sum2 *= 100;
-                    sum2 /= 10;
+                    sum2 /= 15;
                     sum2 += addPlusy(data2[i]);
                         
                     sum = (sum1+sum2)/2;    
