@@ -17,7 +17,7 @@
   },
   {
     "Numer": 4,
-    "Ruch harmoniczny": 0,
+    "Ruch harmoniczny": 2.5,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
@@ -65,7 +65,7 @@
   },
   {
     "Numer": 10,
-    "Ruch harmoniczny": 1.75,
+    "Ruch harmoniczny": 3,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
@@ -89,7 +89,7 @@
   },
   {
     "Numer": 13,
-    "Ruch harmoniczny": 0,
+    "Ruch harmoniczny": 1,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
@@ -129,7 +129,7 @@
   },
   {
     "Numer": 19,
-    "Ruch harmoniczny": 1.75,
+    "Ruch harmoniczny": 2.5,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
@@ -241,7 +241,7 @@
   },
   {
     "Numer": 33,
-    "Ruch harmoniczny": 1.5,
+    "Ruch harmoniczny": 2.5,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
@@ -249,7 +249,7 @@
   },
   {
     "Numer": 34,
-    "Ruch harmoniczny": 1.5,
+    "Ruch harmoniczny": 3.75,
     "Termodynamika I": 0,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
