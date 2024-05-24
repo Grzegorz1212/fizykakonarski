@@ -25,7 +25,7 @@
     "Indukcja": 4.5,
     "Optyka": 4,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 1     
   },
   {
     "Numer": 5,
@@ -44,7 +44,7 @@
   {
     "Numer": 7,
     "Indukcja": 0,
-    "Optyka": 0,
+    "Optyka": 2,
     "Fale": 0,
     "Plusy": 0     
   },
@@ -53,28 +53,28 @@
     "Indukcja": 4.5,
     "Optyka": 4.25,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 1     
   },
   {
     "Numer": 9,
     "Indukcja": 4.5,
     "Optyka": 3.5,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 8     
   },
   {
     "Numer": 11,
     "Indukcja": 4,
     "Optyka": 3.25,
     "Fale": 0,
-    "Plusy": 2     
+    "Plusy": 4     
   },
   {
     "Numer": 12,
     "Indukcja": 4,
     "Optyka": 3.25,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 2     
   },
   {
     "Numer": 13,
@@ -95,7 +95,7 @@
     "Indukcja": 2,
     "Optyka": 4,
     "Fale": 0,
-    "Plusy": 1     
+    "Plusy": 2     
   },
   {
     "Numer": 16,
@@ -116,7 +116,7 @@
     "Indukcja": 4,
     "Optyka": 3.25,
     "Fale": 0,
-    "Plusy": 6     
+    "Plusy": 8     
   },
   {
     "Numer": 19,
@@ -193,7 +193,7 @@
     "Indukcja": 4.25,
     "Optyka": 2,
     "Fale": 0,
-    "Plusy": 3     
+    "Plusy": 9     
   },
   {
     "Numer": 30,
@@ -214,20 +214,20 @@
     "Indukcja": 4.5,
     "Optyka": 3,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 2     
   },
   {
     "Numer": 33,
     "Indukcja": 4.5,
     "Optyka": 2,
     "Fale": 0,
-    "Plusy": 0     
+    "Plusy": 2     
   },
   {
     "Numer": 34,
     "Indukcja": 3.5,
     "Optyka": 3.25,
     "Fale": 0,
-    "Plusy": 5     
+    "Plusy": 6     
   }
 ]
