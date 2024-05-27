@@ -74,7 +74,7 @@
   {
     "Numer": 11,
     "Ruch harmoniczny": 1.5,
-    "Termodynamika I": 2.25,
+    "Termodynamika I": 4,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
     "Plusy": 0    
@@ -154,7 +154,7 @@
   {
     "Numer": 22,
     "Ruch harmoniczny": 3,
-    "Termodynamika I": 0,
+    "Termodynamika I": 3,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
     "Plusy": 0    
@@ -170,7 +170,7 @@
   {
     "Numer": 24,
     "Ruch harmoniczny": 0,
-    "Termodynamika I": 0,
+    "Termodynamika I": 3,
     "Termodynamika II": 0,
     "Elektrostatyka": 0,
     "Plusy": 0    
