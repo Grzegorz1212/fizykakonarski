@@ -141,48 +141,24 @@
         // Function to create an table with Schedule
         function showScheduleTable(className) {
             // Update the class title
-            document.getElementById("classTitle").textContent = className;
-            const classTableDiv = document.getElementById("classTable");
+            //document.getElementById("classTitle").textContent = className;
+            //const classTableDiv = document.getElementById("classTable");
             
             // construct a schedule for a specyfic class               
-            let tableHTML = '<table border="1">';
+            //let tableHTML = '<table border="1">';
           
-            if (className === "Klasa1A"){
-                tableHTML += '<tr>' 
-                    tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
-                tableHTML += '</tr>' 
-                tableHTML += '<tr>' 
-                    tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
-                tableHTML += '</tr>' 
-               
-            } else if (className === "Klasa1B"){
-                <tr>
-                    <th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>
-                </tr>
-                <tr>
-                    <td>Mech1</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td>
-                </tr>
-                <tr>
-                    <td>Mech2</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td>
-                </tr>
-                <tr>
-                    <td>Mech3</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td>
-                </tr>
-                <tr>
-                    <td>PG1</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td>
-                </tr>
-                <tr>
-                    <td>PG2</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td>
-                </tr>
-                <tr>
-                    <td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>
-                tableHTML += '</tr>'        
-            }
+            
+                //tableHTML += '<tr>' 
+                    //tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
+                //tableHTML += '</tr>' 
+                //tableHTML += '<tr>' 
+                    //tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
+               // tableHTML += '</tr>' 
             
             
-            tableHTML += '</table>';
+           // tableHTML += '</table>';
             
-            classTableDiv.innerHTML = tableHTML;
+           // classTableDiv.innerHTML = tableHTML;
             
             // Display the div after fetching the data
             document.getElementById("classData").classList.remove("hidden");
