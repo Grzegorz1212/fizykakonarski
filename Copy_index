@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fizyka Konarski</title>
+
+    <style>
+        /* CSS to style the table and bold text */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        /* Style to make the text in the second column bold */
+        tr:nth-child(1) {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        
+        #classSelection {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Create four columns */
+            gap: 10px; /* Adjust the gap between buttons */
+            text-align: center; /* Center align the contents */
+        }
+
+        #classSelection button {
+            margin: 0; /* Remove any default margin */
+            width: 100%; /* Make buttons fill the entire width of their container */
+        }
+
+        #classSelection label {
+            grid-column: span 4; /* Span all four columns */
+        }
+        
+        /* CSS to style the buttons */
+        button {
+            width: 100px; /* Adjust the width of the buttons */
+            height: 30px; /* Adjust the height of the buttons */
+            font-size: 12px; /* Adjust the font size of the text inside the buttons */
+            /* Add any other button styling as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h1>
+    <h2>Konsultacje odbywają się w piątki w godzinach 13:45-14:45 w sali 22</h2>
+    <h2>Kółko fizyczne odbywa się w poniedziałki w godzinach 14:55-15:40 w sali 22</h2>
+    <h2>ZAPRASZAM!</h2>
+    <h2>---------------------------------------------------------------------------------------</h2>
+    <h1>Zajęcia ćwiczeniowe półrocze letnie</h1>
+    
+    <div id="classSelection" style="display: grid; grid-template-columns: repeat(4, 1fr);">
+        <!-- Labels for each class -->
+        <div>Klasa 1A</div>
+        <div>Klasa 1B</div>
+        <div>Klasa 1C</div>
+        <div>Klasa 1D</div>
+
+        <!-- Buttons for "Półrocze zimowe" -->
+        <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa2A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa3A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa4A1')">Półrocze zimowe</button>
+
+        <!-- Buttons for "Półrocze letnie" -->
+        <button type="button" onclick="fetchClassData('klasa1A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa2A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa3A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa4A2')">Półrocze letnie</button>
+
+        <!-- Buttons for "Ocena końcoworoczna" -->
+        <button type="button" onclick="fetchFinalData('klasa1A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa2A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa3A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa4A')">Ocena końcoworoczna</button>
+    </div>
+
+    <div id="classSelection" style="display: grid; grid-template-columns: repeat(5, 1fr);">
+        <!-- Labels for each class -->
+        <div>Klasa 2A</div>
+        <div>Klasa 2B</div>
+        <div>Klasa 2C</div>
+        <div>Klasa 2D</div>
+        <div>Klasa 2E</div>
+
+        <!-- Buttons for "Półrocze zimowe" -->
+        <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa2A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa3A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa4A1')">Półrocze zimowe</button>
+
+        <!-- Buttons for "Półrocze letnie" -->
+        <button type="button" onclick="fetchClassData('klasa1A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa2A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa3A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa4A2')">Półrocze letnie</button>
+
+        <!-- Buttons for "Ocena końcoworoczna" -->
+        <button type="button" onclick="fetchFinalData('klasa1A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa2A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa3A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa4A')">Ocena końcoworoczna</button>
+    </div>
+    
+
+    <!-- Div area to display table data -->
+    <div id="classData" class="hidden">
+        <p id="classTitle"></p>
+        <div id="classTable"></div>
+        <button type="button" onclick="showHomeSection()">Powrot</button>
+    </div>
+
+    <h1>ROZSZERZENIE Zestawy zadań:</h1>
+    <div><a href="zestaw_1_1.pdf" download>Zestaw_1_1</a></div>
+    <div><a href="zestaw_1_2.pdf" download>Zestaw_1_2</a></div>
+    <div><a href="zestaw_1_3.pdf" download>Zestaw_1_3</a></div>
+    <div><a href="zestaw_1_4.pdf" download>Zestaw_1_4</a></div>
+
+    <div><a href="zestaw_2_1.pdf" download>Zestaw_2_1</a></div>
+    <div><a href="zestaw_2_2.pdf" download>Zestaw_2_2</a></div>
+    <div><a href="zestaw_2_3.pdf" download>Zestaw_2_3</a></div>
+    <div><a href="zestaw_2_4.pdf" download>Zestaw_2_4</a></div>
+    <div><a href="zestaw_2_5.pdf" download>Zestaw_2_5</a></div>
+
+    <div><a href="zestaw_3_1.pdf" download>Zestaw_3_1</a></div>
+    <div><a href="zestaw_3_2.pdf" download>Zestaw_3_2</a></div>
+    <div><a href="zestaw_3_3.pdf" download>Zestaw_3_3</a></div>
+    <div><a href="zestaw_3_4.pdf" download>Zestaw_3_4</a></div>
+    <div><a href="zestaw_3_5.pdf" download>Zestaw_3_5</a></div>
+    
+    <div><a href="zestaw_4_1.pdf" download>Zestaw_4_1</a></div>
+    <div><a href="zestaw_4_2.pdf" download>Zestaw_4_2</a></div>
+    
+    <script>
+
+        function fetchClassData(className) {
+            fetch(className + '.json') // Fetch the respective JSON file based on the className
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Display the class data in an HTML table
+                    const classTableDiv = document.getElementById("classTable");
+                    classTableDiv.innerHTML = createTableFromData(data, className);
+
+                    // Update the class title
+                    document.getElementById("classTitle").textContent = className;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+
+            // Display the div after fetching the data
+            document.getElementById("classData").classList.remove("hidden");
+            document.getElementById("classSelection").classList.add("hidden");
+        }
+
+        function fetchFinalData(className) {
+            fetch(className + '1.json') // Fetch the respective JSON file based on the className
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data1 => {
+                    fetch(className + '2.json') // Fetch the respective JSON file based on the className
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        })
+                        .then(data2 => {
+                            // Display the class data in an HTML table
+                            const classTableDiv = document.getElementById("classTable");
+                            classTableDiv.innerHTML = createFinalTable(data1, data2, className);
+
+                            // Update the class title
+                            document.getElementById("classTitle").textContent = className;
+                        })
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+
+            // Display the div after fetching the data
+            document.getElementById("classData").classList.remove("hidden");
+            document.getElementById("classSelection").classList.add("hidden");
+        }
+
+
+        
+        // Function to create an HTML table from JSON data
+        function createTableFromData(data, className) {
+            let tableHTML = '<table border="1">';
+            // Assuming the first object in the data array contains column headers
+            tableHTML += '<tr>';
+            Object.keys(data[0]).forEach(key => {
+                tableHTML += '<th>' + key + '</th>';
+            });
+            tableHTML += '<th>Procent</th>'; // Add a header for the new column
+            tableHTML += '<th>Ocena</th>'; // Add a header for the new column
+            tableHTML += '</tr>';
+
+            // Adding rows to the table
+            data.forEach(obj => {
+                tableHTML += '<tr>';
+                Object.values(obj).forEach(value => {
+                    tableHTML += '<td>' + value + '</td>';
+                });
+                let sum = 0;
+                let ocena = 0;
+                if (className === "klasa1A1" || className === "klasa1A2"){
+                    sum = calculateSumForRow(obj); // Perform your calculation here
+                    sum *= 100;
+                    sum /= 10;
+                    sum += addPlusy(obj);
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 50) {
+                        ocena = 3;
+                    } else if (sum >= 30) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa2A1" || className === "klasa2A2"){
+                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                    sum *= 100;
+                    if (className === "klasa2A1"){
+                        sum /= 10;
+                    } else {
+                        sum /= 10;
+                    }
+                    sum += addPlusy(obj);
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 55) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa3A1" || className === "klasa3A2"){
+                    sum = calculateSumWithoutLowestValue(obj); // Perform your calculation here
+                    sum *= 100;
+                    sum /= 10;
+                    sum += addPlusy(obj);
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 55) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa4A1" || className === "klasa4A2"){
+                    sum = calculateSumForRow(obj); // Perform your calculation here
+                    sum *= 100;
+                    sum /= 15;
+                    sum += addPlusy(obj);
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 90) {
+                        ocena = 5;
+                    } else if (sum >= 75) {
+                        ocena = 4;
+                    } else if (sum >= 60) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                }
+                tableHTML += '<td>' + sum.toFixed(2) + '</td>'; // Add the calculated value to the table
+                tableHTML += '<td>' + ocena + '</td>';
+                tableHTML += '</tr>';
+            });
+
+            tableHTML += '</table>';
+            return tableHTML;
+        }
+
+        // Function to create an HTML table for final results
+        function createFinalTable(data1, data2, className) {
+            let tableHTML = '<table border="1">';
+            // Define column headers
+            tableHTML += '<tr>';
+            tableHTML += '<th>Numer</th>';
+            tableHTML += '<th>Procent zima</th>';
+            tableHTML += '<th>Procent lato</th>';
+            tableHTML += '<th>Procent sredni</th>';
+            tableHTML += '<th>Ocena roczna</th>';
+            tableHTML += '</tr>';
+
+            // Iterate over both data arrays
+            for (let i = 0; i < Math.min(data1.length, data2.length); i++) {
+                const obj1 = data1[i];
+                const obj2 = data2[i];
+
+                // Perform calculations and create table rows
+                let sum1 = 0;
+                let sum2 = 0;
+                let sum = 0;
+                let ocena = 0;
+               
+                // Your conditional logic for calculations goes here
+
+                if (className === "klasa1A"){
+                    sum1 = calculateSumForRow(obj1); // Perform your calculation here
+                    sum1 *= 100;
+                    sum1 /= 10;
+                    sum1 += addPlusy(obj1);
+                        
+                    sum2 = calculateSumForRow(data2[i]); // Perform your calculation here
+                    sum2 *= 100;
+                    sum2 /= 10;
+                    sum2 += addPlusy(data2[i]);
+                        
+                    sum = (sum1+sum2)/2;    
+                        
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 50) {
+                        ocena = 3;
+                    } else if (sum >= 30) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa2A"){
+                    sum1 = calculateSumWithoutLowestValue(obj1); // Perform your calculation here
+                    sum1 *= 100;
+                    sum1 /= 10;
+                    sum1 += addPlusy(obj1);
+
+                    sum2 = calculateSumWithoutLowestValue(data2[i]); // Perform your calculation here
+                    sum2 *= 100;
+                    sum2 /= 10;
+                    sum2 += addPlusy(data2[i]);
+                        
+                    sum = (sum1+sum2)/2;    
+                        
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 55) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa3A"){
+                    sum1 = calculateSumWithoutLowestValue(obj1); // Perform your calculation here
+                    sum1 *= 100;
+                    sum1 /= 10;
+                    sum1 += addPlusy(obj1);
+                        
+                    sum2 = calculateSumWithoutLowestValue(data2[i]); // Perform your calculation here
+                    sum2 *= 100;
+                    sum2 /= 10;
+                    sum2 += addPlusy(data2[i]);
+
+                    sum = (sum1+sum2)/2;
+                        
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 85) {
+                        ocena = 5;
+                    } else if (sum >= 70) {
+                        ocena = 4;
+                    } else if (sum >= 55) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                } else if (className === "klasa4A"){
+                    sum1 = calculateSumForRow(obj1); // Perform your calculation here
+                    sum1 *= 100;
+                    sum1 /= 15;
+                    sum1 += addPlusy(obj1);
+                        
+                    sum2 = calculateSumForRow(data2[i]); // Perform your calculation here
+                    sum2 *= 100;
+                    sum2 /= 15;
+                    sum2 += addPlusy(data2[i]);
+
+                    sum = (sum1+sum2)/2;
+                        
+                    if (sum > 100) {
+                        ocena = 6;
+                    } else if (sum >= 90) {
+                        ocena = 5;
+                    } else if (sum >= 75) {
+                        ocena = 4;
+                    } else if (sum >= 60) {
+                        ocena = 3;
+                    } else if (sum >= 40) {
+                        ocena = 2;
+                    } else {
+                        ocena = 1;
+                    }
+                }
+
+                // Create table row
+                tableHTML += '<tr>';
+                tableHTML += '<td>' + obj1['Numer'] + '</td>';
+                tableHTML += '<td>' + sum1.toFixed(2) + '</td>';
+                tableHTML += '<td>' + sum2.toFixed(2) + '</td>';
+                tableHTML += '<td>' + sum.toFixed(2) + '</td>';
+                tableHTML += '<td>' + ocena + '</td>';
+                tableHTML += '</tr>';
+            }
+
+            tableHTML += '</table>';
+            return tableHTML;
+        }
+        
+        // Function to calculate sum of all numeric values in a row
+        function calculateSumForRow(obj) {
+            const keysToExclude = ['Numer', 'Plusy']; // Keys to exclude from the sum
+            const sum = Object.entries(obj)
+                .filter(([key]) => !keysToExclude.includes(key)) // Exclude specific keys
+                .reduce((acc, [_, value]) => {
+                    const numValue = Number(value);
+                    return !isNaN(numValue) ? acc + numValue : acc; // Add numeric values to the sum
+                }, 0);
+            return sum;
+        }
+
+        function calculateSumWithoutLowestValue(obj) {
+            const keysToExclude = ['Numer', 'Plusy']; // Keys to exclude from the sum
+            const includedValues = Object.entries(obj)
+                .filter(([key]) => !keysToExclude.includes(key)) // Exclude specific keys
+                .map(([_, value]) => Number(value)) // Get numeric values
+
+            // Find the lowest value among the included values
+            let lowestValue = Math.min(...includedValues);
+
+            // Calculate the sum by subtracting the lowest value once
+            let sumWithoutLowest = includedValues.reduce((acc, val) => {
+                if (val === lowestValue) {
+                    lowestValue = NaN; // Set lowestValue to NaN to ensure it's subtracted only once
+                    return acc;
+                }
+                return acc + val;
+            }, 0);
+
+            return sumWithoutLowest;
+        }
+
+        function addPlusy(obj) {
+            const plusyValue = Number(obj['Plusy']); // Get the 'Plusy' column value as a number
+            return plusyValue;
+        }
+
+        function showHomeSection() {
+             // Hide the button section
+            document.getElementById("classData").classList.add("hidden");
+            // Display the home section
+            document.getElementById("classSelection").classList.remove("hidden");
+        }
+
+    </script>
+
+</body>
+</html>
