@@ -76,7 +76,7 @@
         
     </div>
     <p>Instrukcje do ćwiczeń:</p>
-    <div><a href="zestaw_1_1.pdf" download>Zestaw_1_1</a></div>
+    <div><a href="zestaw_1_1.pdf" download>Instrukcje_1</a></div>
 
     <h2>..............................................................................................................</h2>
 
@@ -148,27 +148,12 @@
             let tableHTML = '<table border="1">';
           
             if (className === "Klasa1A"){
-                <tr>
-                    <th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>
-                </tr>
-                <tr>
-                    <td>Mech1</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td>
-                </tr>
-                <tr>
-                    <td>Mech2</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td>
-                </tr>
-                <tr>
-                    <td>Mech3</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td>
-                </tr>
-                <tr>
-                    <td>PG1</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td>
-                </tr>
-                <tr>
-                    <td>PG2</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td>
-                </tr>
-                <tr>
-                    <td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>
-                </tr>
+                tableHTML += '<tr>' 
+                    tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
+                tableHTML += '</tr>' 
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
+                tableHTML += '</tr>' 
                
             } else if (className === "Klasa1B"){
                 <tr>
@@ -191,13 +176,13 @@
                 </tr>
                 <tr>
                     <td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>
-                </tr>        
+                tableHTML += '</tr>'        
             }
             
             
             tableHTML += '</table>';
             
-            classTableDiv.innerHTML =  tableHTML;
+            classTableDiv.innerHTML = tableHTML;
             
             // Display the div after fetching the data
             document.getElementById("classData").classList.remove("hidden");
