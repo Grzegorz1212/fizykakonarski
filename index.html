@@ -54,15 +54,42 @@
     <h2>Konsultacje odbywają się w piątki w godzinach 13:45-14:45 w sali 22</h2>
     <h2>Kółko fizyczne odbywa się w poniedziałki w godzinach 14:55-15:40 w sali 22</h2>
     <h2>ZAPRASZAM!</h2>
-    <h2></h2>
-    <h2>Zajęcia ćwiczeniowe półrocze letnie</h2>
+    <h2>---------------------------------------------------------------------------------------</h2>
+    <h1>Zajęcia ćwiczeniowe półrocze letnie</h1>
     
     <div id="classSelection" style="display: grid; grid-template-columns: repeat(4, 1fr);">
         <!-- Labels for each class -->
         <div>Klasa 1A</div>
+        <div>Klasa 1B</div>
+        <div>Klasa 1C</div>
+        <div>Klasa 1D</div>
+
+        <!-- Buttons for "Półrocze zimowe" -->
+        <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa2A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa3A1')">Półrocze zimowe</button>
+        <button type="button" onclick="fetchClassData('klasa4A1')">Półrocze zimowe</button>
+
+        <!-- Buttons for "Półrocze letnie" -->
+        <button type="button" onclick="fetchClassData('klasa1A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa2A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa3A2')">Półrocze letnie</button>
+        <button type="button" onclick="fetchClassData('klasa4A2')">Półrocze letnie</button>
+
+        <!-- Buttons for "Ocena końcoworoczna" -->
+        <button type="button" onclick="fetchFinalData('klasa1A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa2A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa3A')">Ocena końcoworoczna</button>
+        <button type="button" onclick="fetchFinalData('klasa4A')">Ocena końcoworoczna</button>
+    </div>
+
+    <div id="classSelection" style="display: grid; grid-template-columns: repeat(5, 1fr);">
+        <!-- Labels for each class -->
         <div>Klasa 2A</div>
-        <div>Klasa 3A</div>
-        <div>Klasa 4A</div>
+        <div>Klasa 2B</div>
+        <div>Klasa 2C</div>
+        <div>Klasa 2D</div>
+        <div>Klasa 2E</div>
 
         <!-- Buttons for "Półrocze zimowe" -->
         <button type="button" onclick="fetchClassData('klasa1A1')">Półrocze zimowe</button>
@@ -91,7 +118,7 @@
         <button type="button" onclick="showHomeSection()">Powrot</button>
     </div>
 
-    <h1>ROZSZERZENIE Zestawy:</h1>
+    <h1>ROZSZERZENIE Zestawy zadań:</h1>
     <div><a href="zestaw_1_1.pdf" download>Zestaw_1_1</a></div>
     <div><a href="zestaw_1_2.pdf" download>Zestaw_1_2</a></div>
     <div><a href="zestaw_1_3.pdf" download>Zestaw_1_3</a></div>
