@@ -44,8 +44,7 @@
 </head>
 <body>
     
-    <h2>Witaj na stronie nauczyciela fizyki w XLIV LO
-    im. ks. Stanisława Konarskiego w Krakowie</h2>
+    <h2>Witaj na stronie nauczyciela fizyki w XLIV LO im. ks. Stanisława Konarskiego w Krakowie</h2>
     <h3>Konsultacje odbywają się w piątki w godzinach 13:45-14:45 w sali 22</h3>
     <h3>Kółko fizyczne odbywa się w poniedziałki w godzinach 14:55-15:40 w sali 22</h3>
     <h3>ZAPRASZAM!</h3>
@@ -128,18 +127,35 @@
             
             // construct a schedule for a specyfic class               
             let tableHTML = '<table border="1">';
-          
-            
+
+            if (className === "Klasa1A"){
                 tableHTML += '<tr>' 
                     tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
                 tableHTML += '</tr>' 
                 tableHTML += '<tr>' 
-                    tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
+                    tableHTML += '<td>Mech1</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td>'
+                tableHTML += '</tr>'
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>Mech2</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td>'
                 tableHTML += '</tr>' 
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>Mech3</td><td>1A3</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td>'
+                tableHTML += '</tr>' 
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>PG1</td><td>1A4</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td>'
+                tableHTML += '</tr>'
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>PG2</td><td>1A5</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td>'
+                tableHTML += '</tr>'
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
+                tableHTML += '</tr>'
+                
+            } else if (className === "Klasa1B"){
             
+            }
             
             tableHTML += '</table>';
-            
             classTableDiv.innerHTML = tableHTML;
             
             // Display the div after fetching the data
