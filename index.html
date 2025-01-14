@@ -68,7 +68,7 @@
     
    
         <h3>Klasy 1</h3>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr);">
+        <div id="classSelection" style="display: grid; grid-template-columns: repeat(4, 1fr);">
             <!-- Labels for each class -->
 
             <!-- Buttons for Schedule -->
@@ -77,9 +77,10 @@
             <button type="button" onclick="showScheduleTable('Klasa1C')">Grafik 1C</button>
             <button type="button" onclick="showScheduleTable('Klasa1D')">Grafik 1D</button>
             
-            <p>Instrukcje do ćwiczeń:</p>
-            <div><a href="zestaw_1_1.pdf" download>Instrukcje_</a></div> 
+            
         </div>
+        <p>Instrukcje do ćwiczeń:</p>
+        <div><a href="zestaw_1_1.pdf" download>Instrukcje_1</a></div> 
        
 
         <h2>..............................................................................................................</h2>
@@ -135,8 +136,8 @@
            // classTableDiv.innerHTML = tableHTML;
             
             // Display the div after fetching the data
-            document.getElementById("classData").classList.remove("hidden");
             document.getElementById("classSelection").classList.add("hidden");
+            document.getElementById("classData").classList.remove("hidden");
         }
 
         function showHomeSection() {
