@@ -44,12 +44,12 @@
 </head>
 <body>
     
-    <h1>Witaj na stronie nauczyciela fizyki w XLIV LO<\h1>
-    <h1>im. ks. Stanisława Konarskiego w Krakowie</h1>
-    <h2>Konsultacje odbywają się w piątki w godzinach 13:45-14:45 w sali 22</h2>
-    <h2>Kółko fizyczne odbywa się w poniedziałki w godzinach 14:55-15:40 w sali 22</h2>
-    <h2>ZAPRASZAM!</h2>
-    <h2>-----------------------------------------------------------------------------------------------------------------</h2>
+    <h2>Witaj na stronie nauczyciela fizyki w XLIV LO<\h2>
+    <h2>im. ks. Stanisława Konarskiego w Krakowie</h2>
+    <h3>Konsultacje odbywają się w piątki w godzinach 13:45-14:45 w sali 22</h3>
+    <h3>Kółko fizyczne odbywa się w poniedziałki w godzinach 14:55-15:40 w sali 22</h3>
+    <h3>ZAPRASZAM!</h3>
+    <h3>-----------------------------------------------------------------------------------------------------------------</h3>
     
     
     <!-- Div area to display table data -->
@@ -62,8 +62,8 @@
    
        
     <div id="classSelection">
-        <h1>PODSTAWA</h1>
-        <h1>Zajęcia ćwiczeniowe półrocze letnie</h1>    
+        <h2>PODSTAWA</h2>
+        <h3>Zajęcia ćwiczeniowe półrocze letnie</h3>    
         
         <!-- Buttons for Schedule -->
         <button type="button" onclick="showScheduleTable('Klasa1A')">Grafik 1A</button>
@@ -94,8 +94,8 @@
     
         <h2>-----------------------------------------------------------------------------------------------------------------</h2>
 
-        <h1>ROZSZERZENIE</h1>
-        <h1>Zestawy zadań:</h1>
+        <h2>ROZSZERZENIE</h2>
+        <h3>Zestawy zadań:</h3>
         <div><a href="zestaw_1_1.pdf" download>Zestaw_1_1</a></div>
         <div><a href="zestaw_1_2.pdf" download>Zestaw_1_2</a></div>
         <div><a href="zestaw_1_3.pdf" download>Zestaw_1_3</a></div>
@@ -130,12 +130,12 @@
             let tableHTML = '<table border="1">';
           
             
-                //tableHTML += '<tr>' 
-                    //tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
-                //tableHTML += '</tr>' 
-                //tableHTML += '<tr>' 
-                    //tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
-               // tableHTML += '</tr>' 
+                tableHTML += '<tr>' 
+                    tableHTML += '<th>Ćwiczenie</th><th>10.02</th><th>24.02</th><th>10.03</th><th>24.03</th><th>07.04</th><th>28.04</th>'
+                tableHTML += '</tr>' 
+                tableHTML += '<tr>' 
+                    tableHTML += '<td>PG3</td><td>1A6</td><td>1A1</td><td>1A2</td><td>1A3</td><td>1A4</td><td>1A5</td>'
+                tableHTML += '</tr>' 
             
             
             tableHTML += '</table>';
